@@ -2,23 +2,8 @@
 <html lang="zxx">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="theme-color" content="#06428d" />
-    <meta name='revisit-after' content='2 days' />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="robots" content="noodp,index,follow" />
-    <meta name="description" content="">
-    <title>{{ $setting->company }} </title>
-    <meta name="keywords" content="Cập nhật sau" />
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ $setting->company }}">
-    <meta property="og:image"
-        content="https://bizweb.dktcdn.net/100/493/970/themes/923518/assets/logo.png?1737361902764">
-    <meta property="og:image:secure_url"
-        content="https://bizweb.dktcdn.net/100/493/970/themes/923518/assets/logo.png?1737361902764">
-    <meta property="og:description" content="">
-   
-    <meta property="og:site_name" content="{{ $setting->company }}">
+    
+    @include('layouts.header.head')
     <link rel="icon" href="{{$setting->favicon}}" type="image/x-icon" />
     @yield('css')
     <link rel="preload" as='style' type="text/css" href="{{ asset('frontend/css/main.scss.css') }}">
