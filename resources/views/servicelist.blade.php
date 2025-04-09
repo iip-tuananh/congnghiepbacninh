@@ -53,7 +53,7 @@
             @endforeach
             {{$list->links()}}
             @else
-            <h3>Nội Dung Đang Cập Nhật</h3>
+            <h5>Nội Dung Đang Cập Nhật</h5>
             @endif
          </div>
       </div>

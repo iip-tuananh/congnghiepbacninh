@@ -48,21 +48,21 @@ $img = json_decode($pro->images);
          <span class="special-price font-weight-bold">{{ number_format($pro->discount) }}₫</span>
          <del class="old-price"> {{ number_format($pro->price) }}₫</del>
          <div class="button-cunghang ">
-            <button class="but1 themgio" data-id="{{$pro->id}}"><i class='bx bxs-cart-add ' style="font-size: 25px"></i></button>
-            <button class="but2" title="Xem chi tiết" type="button"
+            <button class="but1 themgio" data-id="{{$pro->id}}">Thêm vào giỏ hàng</i></button>
+            {{-- <button class="but2" title="Xem chi tiết" type="button"
                onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
             Chi Tiết
-            </button>
+            </button> --}}
          </div>
          @else
          <span class="special-price font-weight-bold">{{ number_format($pro->price) }}₫</span>
          {{-- <del class="old-price"> {{ number_format($pro->price) }}₫</del> --}}
          <div class="button-cunghang ">
-            <button class="but1 themgio" data-id="{{$pro->id}}"><i class='bx bxs-cart-add ' style="font-size: 25px"></i></button>
-            <button class="but2" title="Xem chi tiết" type="button"
+            <button class="but1 themgio" data-id="{{$pro->id}}">Thêm vào giỏ hàng</i></button>
+            {{-- <button class="but2" title="Xem chi tiết" type="button"
                onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
             Chi Tiết
-            </button>
+            </button> --}}
          </div>
          @endif
          @else

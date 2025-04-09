@@ -5,7 +5,11 @@
     
     @include('layouts.header.head')
     <link rel="icon" href="{{$setting->favicon}}" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     @yield('css')
+    
     <link rel="preload" as='style' type="text/css" href="{{ asset('frontend/css/main.scss.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/main.scss.css') }}" type="text/css" media="all" />
     <link rel="preload" as='style' type="text/css" href="{{ asset('frontend/css/index.scss.css') }}">
@@ -61,18 +65,12 @@
 </head>
 
 <body>
+    <div id="gotop"><i class='bx bx-chevron-up'></i></div>
     {{-- <div id="toast-container"></div> --}}
     @include('layouts.header.index')
     @yield('content')
     @include('layouts.footer.index')
-    <a href="#" class="backtop" title="Lên đầu trang">
-        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-up" role="img"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-up fa-w-10">
-            <path fill="currentColor"
-                d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
-                class=""></path>
-        </svg>
-    </a>
+ 
     <div class="fixed-bottom-mobile d-md-none d-block">
         <ul>
             <li class="menu-bar ">
@@ -391,7 +389,7 @@
         <img src="https://bizweb.dktcdn.net/100/485/241/themes/911577/assets/messenger.svg?1705567372895"
             alt="Messenger">
     </a> --}}
-
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Lấy tất cả các nút "Thêm vào giỏ"
@@ -585,6 +583,33 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     } else {
         console.log('Không tìm thấy phần tử clickFilter hoặc menuFilter'); // Kiểm tra nếu phần tử không tồn tại
+    }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const goTopButton = document.getElementById('gotop');
+
+    if (goTopButton) { // Kiểm tra nút có tồn tại không
+        // Lắng nghe sự kiện click
+        goTopButton.addEventListener('click', function () {
+            console.log('Nút "Lên đầu trang" đã được nhấn');
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Hiển thị hoặc ẩn nút khi cuộn trang
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 200) {
+                goTopButton.style.display = 'block';
+            } else {
+                goTopButton.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('Không tìm thấy nút #gotop');
     }
 });
 </script>

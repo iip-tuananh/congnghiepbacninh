@@ -441,7 +441,7 @@
                                             <div class="title-header-col">
                                                 <span>CÓ THỂ <b>BẠN THÍCH</b></span>
                                             </div>
-                                            <div class="list">
+                                            <div class="list goiy-list">
                                                 @foreach ($goiy as $item)
                                                     @php
                                                         $anhgoiy = json_decode($item->images);
@@ -468,14 +468,14 @@
          <span class="special-price font-weight-bold">{{ number_format($item->discount) }}₫</span>
          <del class="old-price"> {{ number_format($item->price) }}₫</del>
          <div class="button-cunghang ">
-            <button class="but1 themgio" data-id="{{$item->id}}"><i class='bx bxs-cart-add ' style="font-size: 25px"></i></button>
+            <button class="but1 themgio" data-id="{{$item->id}}">Thêm vào giỏ hàng</button>
           
          </div>
          @else
          <span class="special-price font-weight-bold">{{ number_format($item->price) }}₫</span>
          {{-- <del class="old-price"> {{ number_format($item->price) }}₫</del> --}}
          <div class="button-cunghang ">
-            <button class="but1 themgio" data-id="{{$item->id}}"><i class='bx bxs-cart-add ' style="font-size: 25px"></i></button>
+            <button class="but1 themgio" data-id="{{$item->id}}">Thêm vào giỏ hàng</button>
            
          </div>
          @endif

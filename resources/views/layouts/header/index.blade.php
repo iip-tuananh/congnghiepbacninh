@@ -42,9 +42,9 @@
                 <ul class="ul-control">
                     <li class="header-wishlist d-md-flex d-none">
                         <div class="icon">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAsVJREFUWEfdl01y2zAMhQGrB3H38UxvUPkkjU/i+CRRThL1Bp1R9lXvERExSVEmQfAv2XjqpUWCH8HHBxDhzn54ZzzwfwPRw+4MCI9r1kcA/A3dMuIfmGtPopgheoAesNvjtAyloCvQExunYUbo1KUGLAtEB3wFwH5dYMBJnXJQCSA3ZQaCAd/UJRcjCcRgXIwy1A/Ym8FL1wPQT4DtCG0MgqcclAiUgKmG8jNAGnDBZy/T+nNyYxEQHXbPbFcDEMzX++hro5ipCOp99yuIkchUACRoYFs4980tTofuEYDORsT6x4TMYsxA6oRv69g1SAh02P29ptNqQEhrCUr4HghZOL4o0xyI3G5xUrK+rNfcjo/U0e0yfcvw5GzDQpmN61+UJQbkXXNvoUAPXGNsnFnwHfaAePaEPEOnjs6HgkvDtNQEJAk+5U3R8XgLr1rTl0f7wIgTHbeTSe/+lmYzzQp2DSJrjBuedfndK1+YHxtO6rsMFOgjJGdAsx+Eg2y3junFzakHSgQwGeJi9DSRAjLz9Cb1D/GfXw+3//Unr5wIxpgWdk6MOaiWbzFQeK0Dnwg1AcHNaVk0NzYGCo8GwPeZqC6FOotEbcZ3fU3rIop6E2PQdjBxc2BtboKemEVU1z7ZjTNZSliAKRHwTb1o8xP8SixF0tFl+qGg6kdZyHSHeh1XD/maxUylgWyWtKm54JH3JHodD4JGIBxbWpd8CxvrJdqhhZK6w5v2Sl2Cn8Zykx+XjOR13+BomXmfUwtVBNrcNuwY56v1XlqusxhH6CiqgBJQplID0YVnI1nbCq2LqTAtDrvWM1/obvoApF5yYLWtSxPQVmR5w37blX0U6hcrLea1qiFrYZoz5GfTdobsJVGX7qwXNWdIrFcGjHr29pLwPm+MdZsNR4WeRKuhmqd41TP6S0f2GeCaOV8+sppFWsbcHdAHPFXiND6ArkYAAAAASUVORK5CYII="/>
+                            <i class='bx bx-phone bx-tada' style='color:#ff4900 ; font-size:36px'  ></i>
                         </div>
-                        < <a class="thumb" title="Liên hệ " href="tel:+{{ $setting->phone1 }}">
+                         <a class="thumb" title="Liên hệ " href="tel:+{{ $setting->phone1 }}">
                             <div class="title">
                                 Liên Hệ
                             </div>
@@ -56,8 +56,7 @@
                     </li>
                     <li class="header-cart block-cart d-flex">
                         <div class="icon">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAj9JREFUWEftlzFyEzEUhn+JWDJ3oEhooAnr4QIhDS1XiBvoOEGYhIET0EET5whp05ATMBFpoAEzwx2SlUEvo40da+Xd1Uq740kRlV7t07fvf+9/MsMdW+yO8eAeKKRIKUP5M3HgvmA4P354fjUNBenzeRkoE7QSnHAov+v3fR7aFCsMBIAxGovz2WQdUPWSMWwC2LMQBDobqtnu2oHcAy9Hw01O5itQgMEwvrWOemps+zwTR4ssYU211Ah0Odp4wYnbLN0swmGfsjFOf/7jwZmb+aAx5pn4vZCtT5jlN5brMwxkvYn1mxnvw6ZS6a3Fb0Egu9HL0gSEbmbJiu4tmsWvzbZAy+IGJlLpcap88+61ZVAsv3tbAfnF3cUCivG0LIGSXBawFdCKbB0soCR/RZzWQHo02CNiVjq7pobx3Vij9OWSSq+c3xrIz1LKfPPkqqzFOCBH/5T5lju3iboPigLqMt88uVaKOcqH3BZPnW9t34vKkAVLnm+O2zfZRjRQhXPHemStXFE+VJKty3wLeFhShm6lM3wnJj32uhG6CicDxYDE7E0GusrkZw4aE/CLg70dqPy06uBZJl8a0CcGPDZgR0OVv2kCTALyxoiN/1Mq/bTqoDwTPwA8ufWZwD+YJKA8E/sAPjhmNhNKiyognQlNwMB59k4q/bEuS2lA22IbHN8AbNjABPalTgorLQO9ngP8g8FzeaEvegUqvOgG6hVj9DfUOXOJH8HgpAkm2YdiuiZ2b5JksYfE7L8HCmXrGiDDDTSzQDvaAAAAAElFTkSuQmCC"/>
-                        </div>
+                            <i class='bx bx-cart bx-tada' style='color:#ff4900 ; font-size:36px'  ></i>                        </div>
                         {{-- phần giở hàng --}}
                         <a class="thumb" href="{{ route('listCart') }}" title="Giỏ hàng" id="giohang-tuan">
                             <div class="title">

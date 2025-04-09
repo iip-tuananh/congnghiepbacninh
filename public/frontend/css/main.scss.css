@@ -327,6 +327,17 @@ ul {
     text-overflow: ellipsis;
     padding: 0 !important
 }
+.line-clamp-2-cus {
+    -webkit-line-clamp: 2;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    position: relative;
+    line-height: 1.7 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 !important
+}
 
 .line-clamp:after {
     content: '';
@@ -367,7 +378,7 @@ ul {
     overflow: hidden;
     position: relative;
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .product-action .product-thumbnail {
@@ -620,7 +631,7 @@ ul {
     width: 100%;
     background: #06428d;
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 0;
     font-weight: 700;
     font-size: 16px;
@@ -644,14 +655,14 @@ ul {
 }
 
 .product-action .btn-views.disabled:hover {
-    background: #0a5ec7;
+    background: #c94a00;
     color: #ffffff;
 }
 
 @media (min-width: 1025px) {
     .product-action:hover {
-        border: 2px solid #06428d;
-        transform: scale(0.95);
+        border: 1px solid #f25c05;
+        transform: scale(0.99);
         transition: all 0.5s ease;
     }
 
@@ -688,7 +699,8 @@ ul {
 
 .footer .top-footer {
     background: #06428d;
-    padding: 10px 0
+    padding: 10px 0;
+    color: white;
 }
 
 .footer .top-footer .row {
@@ -715,13 +727,13 @@ ul {
 }
 
 .footer .top-footer .section_chinhsach a .text {
-    color: #000;
+    color: #ffffff;
     padding-left: 10px
 }
 
 .footer .top-footer .section_chinhsach a .text .title {
     display: block;
-    color: #000;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 700
 }
@@ -797,7 +809,7 @@ ul {
     font-size: 16px;
     margin-bottom: 20px;
     position: relative;
-    color: #06428d;
+    color: #ff4900;
     font-weight: 700;
     text-transform: uppercase
 }
@@ -911,7 +923,7 @@ ul {
     display: block;
     font-size: 20px;
     font-weight: 700;
-    color: #06428d
+    color: #f34600;
 }
 
 .footer .mid-footer .call-footer li a:hover {
@@ -953,7 +965,7 @@ ul {
     .header-menu {
         position: relative;
         z-index: 9;
-        background: #002752;
+        background: #06428d;
     }
 
     .header-menu .header-menu-des {
@@ -986,10 +998,10 @@ ul {
     }
 
     .header-menu .header-menu-des .header-nav>ul.item_big {
-        text-align: left;
+        text-align: center;
         margin: 0px;
         padding: 0px;
-        width: 100%;
+        width: 66%;
         height: auto;
         white-space: nowrap
     }
@@ -1994,7 +2006,7 @@ header.header .header-control .ul-control li {
 header.header .header-control .ul-control li .icon {
     width: 40px;
     height: 40px;
-    border: 1px solid #06428d;
+    /* border: 1px solid #06428d; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2038,7 +2050,7 @@ header.header .header-control .ul-control li .icon svg path {
 header.header .header-control .ul-control li .thumb .title {
     font-size: 18px;
     color: #ff4900;
-    font-weight: 700
+    font-weight: 400;
 }
 
 @media (max-width: 767px) {
@@ -4154,10 +4166,15 @@ img.lazyload.loaded {
     cursor: pointer; /* Thêm hiệu ứng con trỏ */
 }
 .but1 {
-    background-color: #cd1300;
-    border: none;
-    width: 30%;
-    border-radius: 9px;
+    display: block;
+    width: 100%;
+    background: #06428d;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 5px;
 }
 .but2 {
     width: 85% !important;
@@ -4166,7 +4183,7 @@ img.lazyload.loaded {
     color: #ffffff;
     font-weight: 700;
     width: 30%;
-    border-radius: 9px;
+    border-radius: 5px;
 }
 .blurred {
     filter: blur(5px);
@@ -4174,7 +4191,7 @@ img.lazyload.loaded {
 .ft-cus{
     border-top: 4px solid #000536be;
     padding: 15px!important;
-    background-color: #002752;
+    background-color: #06428d;
     color: #fff3cd !important;
 }
 .logo-ft{
@@ -4275,7 +4292,7 @@ img.lazyload.loaded {
     margin: 0;
 }
 .header-tuan{
-    background-color: #002752 !important;
+    background-color: #06428d !important;
     border-bottom: 2px solid #7c3402;
 }
 .logotop{
@@ -4477,7 +4494,7 @@ img.lazyload.loaded {
     background-color: #ff4d4d; /* Màu nền sáng hơn khi hover */
 }
 .editnen{
-    background-color: #002752 !important;
+    background-color: #06428d !important;
     border-radius: 10px;
     padding: 5px;
     color: #fff3cd !important;
@@ -4538,4 +4555,67 @@ img.lazyload.loaded {
         text-align: center; /* Căn giữa nội dung */
     }
 
+}
+body {
+    font-family: quicksand, sans-serif !important;
+}
+.vienchu {
+    font-family: quicksand, sans-serif !important;
+}
+.goiy-list .but1{
+    padding: 7px !important;
+    font-size: 13px !important;
+    background-color: #06428d !important;
+}
+.goiy-list .but1:hover{
+   
+    background-color: #c94a00 !important;
+}
+.but1:hover{
+    background-color: #c94a00 !important;
+}
+#gotop{
+    position: fixed !important;
+    bottom: 163px !important;
+    right: 23px !important;
+    background-color:#06428d !important;
+    font-size: 35px !important;
+    height: 48px !important;
+    width: 48px !important;
+    text-align: center !important;
+    color: white !important;
+    border-radius: 50% !important;
+}
+.tuan-h6{
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+}
+.cus-hov:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    color: orangered !important;
+    
+}
+.cus-hov:hover img{
+    transform: scale(1.05);
+    transition: all .5s ease;
+}
+.cus-hov{
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+}
+.cus-hov img{
+ 
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+
+    transition: all .5s ease;
 }

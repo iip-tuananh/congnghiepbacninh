@@ -17,6 +17,7 @@ use App\models\ReviewCus;
 use App\models\PageContent;
 use App\models\Services;
 use App\models\Project;
+use App\models\Promotion;
 
 class HomeController extends Controller
 {
@@ -32,6 +33,7 @@ class HomeController extends Controller
         $data['duan'] = Project::where('status',1)->orderBy('id','DESC')->get();
         $data['video'] = Video::where('status',1)->limit(6)->get();
         $data['sales'] = Product::where('status', 1)->where('discount', '>', 0)->get();
+        $data['banner_km'] = Promotion::where(['status'=>1])->get(['id','image','link','description','name']);
         $data['homePro'] = Product::where(['status'=>1,'discountStatus'=>1])
             ->inRandomOrder()
             ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description','status_variant')

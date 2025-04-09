@@ -36,13 +36,17 @@ class AllController extends Controller
                         preg_match('/^https:\/\/imagedelivery\.net\/[A-Za-z0-9_-]+\/[A-Za-z0-9-]+\/(public|private)$/', $image)) {
                         $this->cloudflareService->deleteImage($image);
                     } else {
-                        $path = public_path($image);
+                        $url = $image;
+                        $path = parse_url($url, PHP_URL_PATH);
+                        $path = public_path($path);
                         if (file_exists($path)) {
                             unlink($path);
                         }
+                        
                     }
                 }
-            }
+            
+         
             $response = $this->cloudflareService->uploadImage($imgAvatar);
             return response()->json([
                 'messenge' => 'success',
@@ -54,6 +58,7 @@ class AllController extends Controller
             ],500);
         }
     }
+}
 
     public function deleteImage(Request $request)
     {

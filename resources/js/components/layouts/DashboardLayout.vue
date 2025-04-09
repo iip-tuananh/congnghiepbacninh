@@ -106,21 +106,21 @@ export default {
             }
           ],
         },
-        // {
-        //   icon: "mdi mdi-newspaper menu-icon",
-        //   name: "Lĩnh vực hoạt động",
-        //   route_name: "",
-        //   sub: [
-        //     {
-        //       name: "Danh sách ",
-        //       path: "/service",
-        //     },
-        //     {
-        //       name: "Danh mục ",
-        //       path: "/service/category",
-        //     }
-        //   ],
-        // },
+        {
+          icon: "mdi mdi-newspaper menu-icon",
+          name: "Lĩnh vực hoạt động",
+          route_name: "",
+          sub: [
+            {
+              name: "Danh sách ",
+              path: "/service",
+            },
+            {
+              name: "Danh mục ",
+              path: "/service/category",
+            }
+          ],
+        },
         // {
         //   icon: "mdi mdi-newspaper menu-icon",
         //   name: "Dự Án",
@@ -171,10 +171,10 @@ export default {
               name: "Quản lý banner",
               path: "/banner",
             },
-            // {
-            //   name: "Quản lý đối tác",
-            //   path: "/partner",
-            // },
+            {
+              name: "Quản lý đối tác",
+              path: "/partner",
+            },
             {
               name: "Cài đặt chung",
               path: "/setting",
@@ -204,17 +204,17 @@ export default {
             },
           ],
         },
-        // {
-        //   icon: "mdi mdi-shopping-music menu-icon",
-        //   name: "Quản lý khuyến mãi",
-        //   route_name: "",
-        //   sub: [
-        //     {
-        //       name: "Danh sách",
-        //       path: "/promotion",
-        //     }
-        //   ],
-        // },
+        {
+          icon: "mdi mdi-shopping-music menu-icon",
+          name: "Quản lý khuyến mãi",
+          route_name: "",
+          sub: [
+            {
+              name: "Danh sách",
+              path: "/promotion",
+            }
+          ],
+        },
         {
           icon: "mdi mdi-shopping-music menu-icon",
           name: "Quản lý tin nhắn liên hệ",
@@ -226,17 +226,17 @@ export default {
             }
           ],
         },
-        // {
-        //   icon: "mdi mdi-newspaper menu-icon",
-        //   name: "Quản lý Review",
-        //   route_name: "",
-        //   sub: [
-        //     {
-        //       name: "Danh sách dịch vụ",
-        //       path: "/reviewCus",
-        //     }
-        //   ],
-        // },
+        {
+          icon: "mdi mdi-newspaper menu-icon",
+          name: "Quản lý Review",
+          route_name: "",
+          sub: [
+            {
+              name: "Danh sách dịch vụ",
+              path: "/reviewCus",
+            }
+          ],
+        },
       ],
     };
   },

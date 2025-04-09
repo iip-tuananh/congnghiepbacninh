@@ -1,9 +1,9 @@
 @extends('layouts.main.master')
 @section('title')
-<span class="tieudetrang">{{ $title }}</span>
+{{ $title }}
 @endsection
 @section('description')
-Danh sách <span class="tieudetrang">{{ $title }}</span>
+Danh sách {{ $title }}
 @endsection
 @section('image')
 {{ url('' . $banner[0]->image) }}
@@ -47,9 +47,7 @@ Danh sách <span class="tieudetrang">{{ $title }}</span>
                <div class="danhmuc-slider-2 swiper-container">
                   <div class="swiper-wrapper">
                      @foreach ($categoryhome as $danhmuc)
-                     {{-- @php
-                     dd($categoryhome);
-                     @endphp --}}
+                  
                      <div class="swiper-slide">
                         <a href="{{ route('allListProCate', ['danhmuc' => $danhmuc->slug]) }}"
                            title="{{ languageName($danhmuc->name) }}">
@@ -243,7 +241,7 @@ Danh sách <span class="tieudetrang">{{ $title }}</span>
                <div class="row">
                   <div class="col-md-3 col-lg-2">
                      <div class="thumb-image">
-                        <img src="{{ $setting->logo }}" title="{{ $title }}">
+                        <img src="{{ $setting->logo }}" >
                      </div>
                   </div>
                   <div class="col-md-9 content col-lg-10">

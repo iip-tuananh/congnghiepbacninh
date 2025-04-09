@@ -16,34 +16,34 @@ class Promotion extends Model
              ])->first();
             if ($query) {
                 $query->name = $request->name;
-                $query->slug = to_slug($request->name);
+                // $query->slug = to_slug($request->name);
                 $query->description = $request->description;
                 $query->link = $request->link;
                 $query->image = $request->image;
                 $query->status = $request->status;
-                $query->content = $request->content;
+                // $query->content = $request->content;
                 $query->save();
             }else{
                 $query = new Promotion();
                 $query->name = $request->name;
-                $query->slug = to_slug($request->name);
+                // $query->slug = to_slug($request->name);
                 $query->description = $request->description;
                 $query->link = $request->link;
                 $query->image = $request->image;
                 $query->status = $request->status;
-                $query->content = $request->content;
+                // $query->content = $request->content;
                 $query->save();
             }
             
         }else{
                 $query = new Promotion();
                 $query->name = $request->name;
-                $query->slug = to_slug($request->name);
+                // $query->slug = to_slug($request->name);
                 $query->description = $request->description;
                 $query->link = $request->link;
                 $query->image = $request->image;
                 $query->status = $request->status;
-                $query->content = $request->content;
+                // $query->content = $request->content;
                 $query->save();
             
         }

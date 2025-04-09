@@ -35,7 +35,7 @@
               <div class="form-group">
               <label>Ảnh đại diện</label>
               <image-upload
-                :oldImage="objData.image"
+               
                 v-model="objData.image"
                 type="avatar"
                 :title="'service-'"

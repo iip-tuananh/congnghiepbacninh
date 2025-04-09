@@ -254,7 +254,7 @@
 }
 
 .layout-product .button_actions .add_to_cart {
-    border: 2px solid #06428d;
+    border: 1px solid #b8b8b8;
     height: 50px;
     padding: 0 0px;
     color: #ffffff;
@@ -286,6 +286,7 @@
     background: #ff0000;
     display: flex;
     align-items: center;
+    font-family: quicksand, sans-serif !important;
     justify-content: center;
     flex-direction: column
 }
@@ -1564,3 +1565,4 @@
 .play-video img {
     height: 37px
 }
+

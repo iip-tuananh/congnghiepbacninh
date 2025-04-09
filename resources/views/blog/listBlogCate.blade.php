@@ -47,7 +47,7 @@
             </div>
             @endforeach
             @else
-            <h3>Nội dung đang cập nhật</h3>
+            <h5>Nội dung đang cập nhật</h5>
             @endif
          </div>
          <div class="row">
