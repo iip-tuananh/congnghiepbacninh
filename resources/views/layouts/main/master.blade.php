@@ -2,14 +2,14 @@
 <html lang="zxx">
 
 <head>
-    
+
     @include('layouts.header.head')
-    <link rel="icon" href="{{$setting->favicon}}" type="image/x-icon" />
+    <link rel="icon" href="{{ $setting->favicon }}" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     @yield('css')
-    
+
     <link rel="preload" as='style' type="text/css" href="{{ asset('frontend/css/main.scss.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/main.scss.css') }}" type="text/css" media="all" />
     <link rel="preload" as='style' type="text/css" href="{{ asset('frontend/css/index.scss.css') }}">
@@ -70,30 +70,33 @@
     @include('layouts.header.index')
     @yield('content')
     @include('layouts.footer.index')
- 
+
     <div class="fixed-bottom-mobile d-md-none d-block">
         <ul>
             <li class="menu-bar ">
                 <a href="javascript:void(0)" id="open-sidebar">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMpJREFUSEvtlEEOwiAQRf/cpN7Eruot1GW5hPESdKnHkJXcRE4iprQkqAUnKEaNbJnw5/3hD6HwocLv480CjTwCmEeoDJSYuTtuHXBD0EibtEyJgZhb9xeI2umt/EWLuh1gVxF0DSXq4Rcx6+4sKhDrD01yT7roKlhsRksNQBqELQ6tCY24JuAm1D1uTxOOGhDVoUieQPaQuQSN7LuvHi7FJ4KWEgBekOTEWqc9VLv2dHkzyB8yP6Hum56xBPnkkw47nyb4/iQXILgApVJ9Gbx+jqYAAAAASUVORK5CYII="/>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMpJREFUSEvtlEEOwiAQRf/cpN7Eruot1GW5hPESdKnHkJXcRE4iprQkqAUnKEaNbJnw5/3hD6HwocLv480CjTwCmEeoDJSYuTtuHXBD0EibtEyJgZhb9xeI2umt/EWLuh1gVxF0DSXq4Rcx6+4sKhDrD01yT7roKlhsRksNQBqELQ6tCY24JuAm1D1uTxOOGhDVoUieQPaQuQSN7LuvHi7FJ4KWEgBekOTEWqc9VLv2dHkzyB8yP6Hum56xBPnkkw47nyb4/iQXILgApVJ9Gbx+jqYAAAAASUVORK5CYII=" />
                     <span>Danh mục mobile</span>
                 </a>
             </li>
             <li>
-                <a href="{{route('home')}}">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQlJREFUSEvtlb0RgzAMhZ83IZtABWMkJSyRyxJQsgZUYZOwiXMGBPgPpMvRxaUtv0+Wn2yFi4e6WB98QNEk0LqdElLqga4cOcnxAJt4uoiOUCrjQM4BtjhlnQBgQY4Brnhf3TDPvQGwIHFASJyKLoCEAUfiQogP4IgLIDZAIs6EbADXin117jAb8glZeBPJmxbQ97V5JACzKa/1rvEG9FU29eQ6eTmASJQJnaBoUmj9BEBdTJEDlHqhK4dpwt23RPl1dgPz2tTWNFVorKX4BTDX1r0TP5FgHOcEf4Bzd8zaepcqcNGRa84+sRHmSd+N0GNnfG++xpg1YxC7L6J9cJajcJ3/oAmFKfwLRzfQGYlSwKkAAAAASUVORK5CYII="/>
+                <a href="{{ route('home') }}">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQlJREFUSEvtlb0RgzAMhZ83IZtABWMkJSyRyxJQsgZUYZOwiXMGBPgPpMvRxaUtv0+Wn2yFi4e6WB98QNEk0LqdElLqga4cOcnxAJt4uoiOUCrjQM4BtjhlnQBgQY4Brnhf3TDPvQGwIHFASJyKLoCEAUfiQogP4IgLIDZAIs6EbADXin117jAb8glZeBPJmxbQ97V5JACzKa/1rvEG9FU29eQ6eTmASJQJnaBoUmj9BEBdTJEDlHqhK4dpwt23RPl1dgPz2tTWNFVorKX4BTDX1r0TP5FgHOcEf4Bzd8zaepcqcNGRa84+sRHmSd+N0GNnfG++xpg1YxC7L6J9cJajcJ3/oAmFKfwLRzfQGYlSwKkAAAAASUVORK5CYII=" />
                     <span>Trang chủ</span>
                 </a>
             </li>
             <li>
-                <a href="{{route('listCart')}}">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARRJREFUSEvNlMsZgjAQhGc7kU70IpSBx2ARYhGQI5QBXrQT6WQVNTw0r0+Nn7kG5p/Z3Swh8KHA+vghIC75kaYDU42D2H8j3ZhgBNx1iVZoxOlTyGuJkiIFUwXghDZbBQDIBZjP30qhb3IsK4DTD9x3aLPoVmmtSDJJ8R7FAehF4/J47cMSxBs029qLo5Iz5WoKze9gbPbgxglRk0gUoRGduUT9zbRMPiM7GKIardgoM/aXvJY7EOfA/CdtEkNJ7YAxhbtMqjxtNtN07yLlbNK4lwSWpG5AIpdg7ifKfTS9cgN62cGhlaFdLX4At3fjF36ARBZgzkBUohHbmZrtzrgqnv1MV/nTlMB25w0IniB4D/4ZcAE4NYUZAz0FuAAAAABJRU5ErkJggg=="/>
+                <a href="{{ route('listCart') }}">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARRJREFUSEvNlMsZgjAQhGc7kU70IpSBx2ARYhGQI5QBXrQT6WQVNTw0r0+Nn7kG5p/Z3Swh8KHA+vghIC75kaYDU42D2H8j3ZhgBNx1iVZoxOlTyGuJkiIFUwXghDZbBQDIBZjP30qhb3IsK4DTD9x3aLPoVmmtSDJJ8R7FAehF4/J47cMSxBs029qLo5Iz5WoKze9gbPbgxglRk0gUoRGduUT9zbRMPiM7GKIardgoM/aXvJY7EOfA/CdtEkNJ7YAxhbtMqjxtNtN07yLlbNK4lwSWpG5AIpdg7ifKfTS9cgN62cGhlaFdLX4At3fjF36ARBZgzkBUohHbmZrtzrgqnv1MV/nTlMB25w0IniB4D/4ZcAE4NYUZAz0FuAAAAABJRU5ErkJggg==" />
                     <span>Giỏ hàng</span>
                     <span class="count count_item_pr">0</span>
                 </a>
             </li>
-        
-        
+
+
         </ul>
     </div>
     <link rel="preload" as="style"
@@ -101,15 +104,15 @@
     <link href="//bizweb.dktcdn.net/100/493/970/themes/923518/assets/ajaxcart.scss.css?1737361902764" rel="stylesheet"
         type="text/css" media="all" />
     <div class="backdrop__body-backdrop___1rvky"></div>
-   
+
     {{-- <script src="{{ asset('frontend/js/jquery.js') }}'" type="text/javascript"></script> --}}
     {{-- <link rel="preload" as="script" href="{{ asset('frontend/js/swiper.js') }}'" />
     <script src="{{ asset('frontend/js/swiper.js') }}'" type="text/javascript"></script> --}}
-  
- 
+
+
     <link rel="preload" as="script" href="{{ asset('frontend/js/main.js') }}" />
     <link rel="preload" as="script" href="{{ asset('frontend/js/index.js') }}" />
-   
+
 
     <script src="{{ asset('frontend/js/main.js') }}" type="text/javascript"></script>
     <script src="{{ asset('frontend/js/index.js') }}" type="text/javascript"></script>
@@ -264,7 +267,8 @@
             </button>
             <ul class="addThis_listing">
                 <li class="addThis_item">
-                    <a class="addThis_item--icon" href="tel:{{$setting->phone1}}" rel="nofollow" aria-label="phone">
+                    <a class="addThis_item--icon" href="tel:{{ $setting->phone1 }}" rel="nofollow"
+                        aria-label="phone">
                         <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="22" cy="22" r="22" fill="url(#paint2_linear)"></circle>
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -282,7 +286,7 @@
                     </a>
                 </li>
                 <li class="addThis_item">
-                    <a class="addThis_item--icon" href="{{$setting->facebook}}" target="_blank"
+                    <a class="addThis_item--icon" href="{{ $setting->facebook }}" target="_blank"
                         rel="nofollow noreferrer" aria-label="zalo">
                         <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="22" cy="22" r="22" fill="url(#paint4_linear)"></circle>
@@ -316,7 +320,7 @@
                     </a>
                 </li>
                 <li class="addThis_item">
-                    <a class="addThis_item--icon" href="{{route('lienHe')}}" aria-label="Liên hệ">
+                    <a class="addThis_item--icon" href="{{ route('lienHe') }}" aria-label="Liên hệ">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="22" cy="22" r="22" fill="url(#paint5_linear)"></circle>
@@ -417,12 +421,14 @@
                         .then(data => {
                             if (data.success) {
                                 toastr.success(data.message);
-                                const cartCountElements = document.querySelectorAll('.count_item_pr');
-    if (cartCountElements.length > 0) {
-        cartCountElements.forEach(element => {
-            element.textContent = data.cartCount; // Cập nhật số lượng từ server
-        });
-    }
+                                const cartCountElements = document.querySelectorAll(
+                                    '.count_item_pr');
+                                if (cartCountElements.length > 0) {
+                                    cartCountElements.forEach(element => {
+                                        element.textContent = data
+                                        .cartCount; // Cập nhật số lượng từ server
+                                    });
+                                }
                             } else {
                                 toastr.error('Có lỗi xảy ra khi thêm sản phẩm vào giỏ hàng.');
                             }
@@ -486,7 +492,7 @@
             });
         });
     </script>
-    <script src="{{asset('frontend/js/toat.js')}}"></script>
+    <script src="{{ asset('frontend/js/toat.js') }}"></script>
     <script>
         toastr.options = {
             "closeButton": true,
@@ -507,19 +513,19 @@
         };
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             @if (session('success'))
                 toastr.success('{{ session('success') }}');
             @endif
-    
+
             @if (session('error'))
                 toastr.error('{{ session('error') }}');
             @endif
-    
+
             @if (session('info'))
                 toastr.info('{{ session('info') }}');
             @endif
-    
+
             @if (session('warning'))
                 toastr.warning('{{ session('warning') }}');
             @endif
@@ -527,92 +533,92 @@
     </script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    fetch('{{ route('get.cart.count') }}')
-        .then(response => response.json())
-        .then(data => {
-            const cartCountElement = document.querySelector('.count_item_pr');
-            if (cartCountElement) {
-                cartCountElement.textContent = data.cartCount;
-            }
-        })
-        .catch(error => {
-            console.error('Lỗi khi lấy số lượng giỏ hàng:', error);
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('{{ route('get.cart.count') }}')
+                .then(response => response.json())
+                .then(data => {
+                    const cartCountElement = document.querySelector('.count_item_pr');
+                    if (cartCountElement) {
+                        cartCountElement.textContent = data.cartCount;
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi khi lấy số lượng giỏ hàng:', error);
+                });
         });
-});
     </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-const menuBar = document.getElementById('open-sidebar');
-const headerNav = document.querySelector('.header-nav');
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBar = document.getElementById('open-sidebar');
+            const headerNav = document.querySelector('.header-nav');
 
-if (menuBar && headerNav) {
-menuBar.addEventListener('click', function () {
-headerNav.classList.toggle('current');
-});
-}
-});
-</script>
-<script>
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuBar = document.getElementById('drop-moblie');
-        const headerNav = document.querySelector('.has-mega');
-        const headerNav2 = document.querySelector('.fa.fa-caret-down'); // Sửa class ở đây
-    
-        if (menuBar && headerNav && headerNav2) {
-            menuBar.addEventListener('click', function () {
-                headerNav.classList.toggle('current');
-                headerNav2.classList.toggle('current'); // Thêm hoặc xóa class 'current'
-            });
-        }
-    });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const clickFilter = document.getElementById('open-filters');
-    const menuFilter = document.querySelector('.menuloc');
-    const asi = document.querySelector('.menuleft');
-
-    if (clickFilter && menuFilter && asi) {
-        clickFilter.addEventListener('click', function () {
-            console.log('Nút "open-filters" đã được click'); // Kiểm tra sự kiện click
-            clickFilter.classList.toggle('swap'); // Thêm hoặc xóa class 'openf'
-            menuFilter.classList.toggle('swap-sidebar'); // Thêm hoặc xóa class 'openf'
-            asi.classList.toggle('hidden-tuan-mobile'); // Thêm hoặc xóa class 'openf'
-        });
-    } else {
-        console.log('Không tìm thấy phần tử clickFilter hoặc menuFilter'); // Kiểm tra nếu phần tử không tồn tại
-    }
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const goTopButton = document.getElementById('gotop');
-
-    if (goTopButton) { // Kiểm tra nút có tồn tại không
-        // Lắng nghe sự kiện click
-        goTopButton.addEventListener('click', function () {
-            console.log('Nút "Lên đầu trang" đã được nhấn');
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Hiển thị hoặc ẩn nút khi cuộn trang
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 200) {
-                goTopButton.style.display = 'block';
-            } else {
-                goTopButton.style.display = 'none';
+            if (menuBar && headerNav) {
+                menuBar.addEventListener('click', function() {
+                    headerNav.classList.toggle('current');
+                });
             }
         });
-    } else {
-        console.error('Không tìm thấy nút #gotop');
-    }
-});
-</script>
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBar = document.getElementById('drop-moblie');
+            const headerNav = document.querySelector('.has-mega');
+            const headerNav2 = document.querySelector('.fa.fa-caret-down'); // Sửa class ở đây
+
+            if (menuBar && headerNav && headerNav2) {
+                menuBar.addEventListener('click', function() {
+                    headerNav.classList.toggle('current');
+                    headerNav2.classList.toggle('current'); // Thêm hoặc xóa class 'current'
+                });
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickFilter = document.getElementById('open-filters');
+            const menuFilter = document.querySelector('.menuloc');
+            const asi = document.querySelector('.menuleft');
+
+            if (clickFilter && menuFilter && asi) {
+                clickFilter.addEventListener('click', function() {
+                    console.log('Nút "open-filters" đã được click'); // Kiểm tra sự kiện click
+                    clickFilter.classList.toggle('swap'); // Thêm hoặc xóa class 'openf'
+                    menuFilter.classList.toggle('swap-sidebar'); // Thêm hoặc xóa class 'openf'
+                    asi.classList.toggle('hidden-tuan-mobile'); // Thêm hoặc xóa class 'openf'
+                });
+            } else {
+                console.log(
+                'Không tìm thấy phần tử clickFilter hoặc menuFilter'); // Kiểm tra nếu phần tử không tồn tại
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const goTopButton = document.getElementById('gotop');
+
+            if (goTopButton) { // Kiểm tra nút có tồn tại không
+                // Lắng nghe sự kiện click
+                goTopButton.addEventListener('click', function() {
+                    console.log('Nút "Lên đầu trang" đã được nhấn');
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+
+                // Hiển thị hoặc ẩn nút khi cuộn trang
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 200) {
+                        goTopButton.style.display = 'block';
+                    } else {
+                        goTopButton.style.display = 'none';
+                    }
+                });
+            } else {
+                console.error('Không tìm thấy nút #gotop');
+            }
+        });
+    </script>
 </body>
 
 </html>

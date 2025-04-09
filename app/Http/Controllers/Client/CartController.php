@@ -96,8 +96,9 @@ public function listCart()
     public function addToCart(Request $request)
     {
         $productId = $request->input('product_id');
+   
         $quantity = $request->input('quantity', 1);
-    
+        // dd($request->all());
         $product = Product::find($productId);
         if (!$product) {
             return response()->json(['success' => false, 'message' => 'Sản phẩm không tồn tại.']);

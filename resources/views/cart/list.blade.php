@@ -84,17 +84,20 @@
                                                                     title="{{ $item['name'] }}">{{ $item['name'] }}</a>
 
                                                                 <a class="cart__btn-remove remove-item-cart ajaxifyCart--remove"
-                                                                    href="javascript:;" data-id="{{ $item['id'] }}"
+                                                                    href="javascript:;"
                                                                     title="xóa"
                                                                     onclick="removeItem({{ $item['id'] }})">Xóa</a>
                                                             </div>
                                                             {{-- end xóa --}}
+                                                            @if (($item['discount'])>0)
                                                             <div class="grid">
                                                                 <div class="grid__item one-half text-right cart_prices">
                                                                     <span
-                                                                        class="cart-price old-price">{{ $item['price'] }}</span>
+                                                                        class="cart-price old-price">{{ isset($item['price']) ? number_format($item['price']) . '₫' : '0₫' }}</span>
 
                                                                 </div>
+                                                                    
+                                                             
 
                                                             </div>
                                                             <div class="grid">
@@ -105,6 +108,26 @@
 
                                                                 </div>
                                                             </div>
+                                                            @else
+                                                            <div class="grid">
+                                                                <div class="grid__item one-half text-right cart_prices">
+                                                                    <span
+                                                                        class="cart-price ">{{ isset($item['price']) ? number_format($item['price']) . '₫' : '0₫' }}</span>
+
+                                                                </div>
+                                                                    
+                                                             
+
+                                                            </div>
+                                                            <div class="grid">
+                                                                <div class="grid__item one-half text-right cart_prices">
+                                                                    <span class="cart-price old-price">
+                                                                        {{ isset($item['discount']) ? number_format($item['discount']) . '₫' : '0₫' }}
+                                                                    </span>
+
+                                                                </div>
+                                                            </div>
+                                                            @endif
                                                             <div class="grid">
                                                                 <div
                                                                     class="input_number_product form-control d-flex align-items-center">
@@ -233,21 +256,27 @@
 
             // Hàm tăng số lượng
             function qtyplus(productId) {
+                // Lấy input số lượng của sản phẩm dựa trên ID
                 const quantityInput = $(`#quantity-${productId}`);
+                // Lấy giá gốc của sản phẩm
                 const price = parseFloat(quantityInput.data('price'));
+                // Lấy giá giảm (nếu có) của sản phẩm
                 const discount = parseFloat(quantityInput.data('discount'));
+                // Lấy số lượng hiện tại của sản phẩm
                 let quantity = parseInt(quantityInput.val());
 
-                // Tăng số lượng
+                // Tăng số lượng sản phẩm
                 quantity++;
+                // Cập nhật giá trị mới vào input số lượng
                 quantityInput.val(quantity);
 
-                // Cập nhật tổng tiền
+                // Cập nhật tổng tiền hiển thị cho sản phẩm
                 updateTotalPrice(productId, quantity, price, discount);
 
-                // Gửi AJAX để cập nhật số lượng trong session
+                // Gửi yêu cầu AJAX để cập nhật số lượng sản phẩm trong session
                 updateCartQuantity(productId, quantity);
             }
+            
 
             // Hàm cập nhật tổng tiền
             function updateTotalPrice(productId, quantity, price, discount) {
@@ -286,6 +315,7 @@
             }
         </script>
         <script>
+            // truyền id vào hàm
         function removeItem(productId) {
     if (confirm('Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?')) {
         $.ajax({
