@@ -677,5 +677,42 @@
            </div>
         </div>
      </section>
+     <script>
+        var swiperdanhmuc = new Swiper('.thuonghieu-swiper', {
+            slidesPerView: 6,
+            slidesPerColumnFill: 'row',
+            spaceBetween: 10,
+            loopAdditionalSlides: 5,
+            grabCursor: true,
+            roundLengths: true,
+            slideToClickedSlide: false,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: '.thuonghieu-swiper .swiper-button-next',
+                prevEl: '.thuonghieu-swiper .swiper-button-prev',
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                   
+                },
+                500: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                991: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 6,
+                }
+            }
+        });
+    </script>
 
 @endsection
