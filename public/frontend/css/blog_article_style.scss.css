@@ -19,9 +19,9 @@
     font-size: 20px;
     font-weight: 700;
     padding: 10px 0px;
-    color: #ffffff;
+    color: #000000;
     padding: 5px 10px;
-    background: #06428d;
+    background: #ffb700;
     border: none;
 }
 
@@ -48,14 +48,14 @@
 
 .aside-content-blog .nav-category ul .nav-item.active>.nav-link,
 .aside-content-blog .nav-category ul .nav-item:hover>.nav-link {
-    color: #06428d
+    color: #ffb700
 }
 
 .aside-content-blog .nav-category ul .nav-item.active>.down_icon:after,
 .aside-content-blog .nav-category ul .nav-item.active>.down_icon:before,
 .aside-content-blog .nav-category ul .nav-item:hover>.down_icon:after,
 .aside-content-blog .nav-category ul .nav-item:hover>.down_icon:before {
-    background-color: #06428d
+    background-color: #ffb700
 }
 
 .aside-content-blog .nav-category ul .menu_down {
@@ -96,7 +96,7 @@
 
 .aside-content-blog .nav-category ul .down_icon.cls_mn:after,
 .aside-content-blog .nav-category ul .down_icon.cls_mn:before {
-    background-color: #06428d;
+    background-color: #ffb700;
     transform: translate(-50%, -50%) rotate(90deg)
 }
 
@@ -119,12 +119,12 @@
     padding: 10px 0px;
     color: #ffffff !important;!i;!;
     padding: 5px 10px;
-    background: #06428d;
-    border: 2px solid #06428d;
+    background: #ffb700;
+    border: 2px solid #ffb700;
 }
 
 .blog_noibat h2 a {
-    color: #ffffff;
+    color: #000000;
 }
 
 @media (max-width: 1199px) {
@@ -214,7 +214,7 @@
 }
 
 .blog_noibat .blog_content .item .contentright h3 a:hover {
-    color: #06428d
+    color: #ffb700
 }
 
 .blog_noibat .blog_content .item:last-child {
@@ -302,7 +302,7 @@
     border-radius: 5px;
     padding: 5px 20px;
     border: 1px solid #e6e6e6;
-    border-bottom: 2px solid #06428d
+    border-bottom: 2px solid #ffb700
 }
 
 .article-main .form-group input::placeholder {
@@ -325,7 +325,7 @@
     border-radius: 5px;
     padding: 5px 20px;
     border: 1px solid #e6e6e6;
-    border-bottom: 2px solid #06428d
+    border-bottom: 2px solid #ffb700
 }
 
 .article-main .form-group textarea::placeholder {
@@ -345,10 +345,10 @@
     height: 40px;
     line-height: 38px;
     padding: 0 25px;
-    background: #06428d;
+    background: #ffb700;
     font-size: 14px;
     color: #fff;
-    border: solid 1px #06428d;
+    border: solid 1px #ffb700;
     font-weight: 400;
     margin-top: 10px;
     border-radius: 5px
@@ -725,7 +725,7 @@
 }
 
 .fixMenu .dola-toc-bottom>ol li>a:hover {
-    background: #06428d;
+    background: #ffb700;
     color: #fff
 }
 
@@ -761,12 +761,12 @@
 }
 
 .fixMenu .dola-toc-bottom>ol li .is-collapsible li.is-active-li>a {
-    background: #06428d;
+    background: #ffb700;
     color: #fff
 }
 
 .fixMenu .dola-toc-bottom>ol li.is-active-li>a {
-    background: #06428d;
+    background: #ffb700;
     color: #fff
 }
 
@@ -777,7 +777,7 @@
     z-index: 99;
     padding: 10px;
     border-radius: 5px 0 0 5px;
-    background: #06428d
+    background: #ffb700
 }
 
 .tabClick img {
@@ -798,7 +798,7 @@
     position: relative;
     font-size: 24px;
     font-weight: 700;
-    color: #06428d;
+    color: #ffb700;
     display: inline-block
 }
 

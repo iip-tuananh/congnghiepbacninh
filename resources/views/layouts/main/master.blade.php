@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap-4-3-min.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/swiper@4.5.1/dist/css/swiper.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="{{ asset('frontend/css/breadcrumb_style.scss.css?1737361902764') }}" rel="stylesheet" type="text/css"
         media="all" />
     <link rel="stylesheet" href="{{ asset('frontend/css/toastr.scss.css') }}">
@@ -116,7 +117,7 @@
 
     <script src="{{ asset('frontend/js/main.js') }}" type="text/javascript"></script>
     <script src="{{ asset('frontend/js/index.js') }}" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <div id="list-favorite" class="d-none">
         <div class="list-favorite-right container" data-type="wishlist">
             <div class="list-favorite-main">
@@ -215,7 +216,7 @@
             <symbol id="icon-phone">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path fill="#06428d"
+                    <path fill="#ffb700"
                         d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
                 </svg>
             </symbol>
@@ -224,7 +225,7 @@
             <symbol id="icon-email">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path fill="#06428d"
+                    <path fill="#ffb700"
                         d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                 </svg>
             </symbol>
@@ -394,6 +395,7 @@
             alt="Messenger">
     </a> --}}
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Lấy tất cả các nút "Thêm vào giỏ"
@@ -440,6 +442,74 @@
                 });
             });
         });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy tất cả các nút "Thêm vào giỏ"
+            const addToCartButtons = document.querySelectorAll('.themgio1');
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault(); // Ngăn chặn hành động mặc định
+
+                    // Lấy ID sản phẩm từ thuộc tính data-id
+                    const productId = this.getAttribute('data-id');
+
+                    // Tạo dữ liệu gửi đi
+                    const formData = new FormData();
+                    // formData.append('_token', '{{ csrf_token() }}'); // CSRF token
+                    formData.append('product_id', productId);
+                    formData.append('quantity', 1); // Số lượng mặc định là 1
+
+                    // Gửi request AJAX
+                    fetch('{{ route('add.to.cart') }}', {
+                        method: 'POST',
+                        headers: {
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                            'Accept': 'application/json',
+                        },
+                            body: formData,
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                toastr.success(data.message);
+                                const cartCountElements = document.querySelectorAll(
+                                    '.count_item_pr');
+                                if (cartCountElements.length > 0) {
+                                    cartCountElements.forEach(element => {
+                                        element.textContent = data
+                                        .cartCount; // Cập nhật số lượng từ server
+                                    });
+                                }
+                            } else {
+                                toastr.error('Có lỗi xảy ra khi thêm sản phẩm vào giỏ hàng.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Lỗi:', error);
+                            alert('Không thể thêm sản phẩm vào giỏ hàng.');
+                        });
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const placeholderText = "Search something...";
+    const searchInput = document.getElementById('custom-search-input');
+    let index = 0;
+
+    function typePlaceholder() {
+        if (index < placeholderText.length) {
+            searchInput.setAttribute('placeholder', placeholderText.substring(0, index + 1));
+            index++;
+            setTimeout(typePlaceholder, 100); // Tốc độ đánh chữ (100ms mỗi ký tự)
+        }
+    }
+
+    typePlaceholder();
+});
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -619,6 +689,7 @@
             }
         });
     </script>
+    @yield('js')
 </body>
 
 </html>

@@ -230,7 +230,7 @@ class ProductController extends Controller
     
             // Lọc theo trạng thái
             $product = $product->where('status', 1)->paginate(12);
-    
+            
             // Render HTML sản phẩm
             $view = view("layouts.product.filter_item", compact('product'))->render();
     

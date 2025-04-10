@@ -225,15 +225,9 @@ Danh sách {{ $title }}
             </div>
             <div class="hidden-tuan-mobile">
 
-               @if (count($list) < 4)
-               @else
-               @include('layouts.menu.tintuc')
-               @endif
-               <br>
-               @if (count($list) < 8)
-               @else
+          
                @include('layouts.menu.danhmuc')
-               @endif
+      
             </div>
          </aside>
          <div class="block-collection col-lg-9 col-12">

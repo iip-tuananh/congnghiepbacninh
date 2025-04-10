@@ -129,7 +129,7 @@ h1 {
 
 .cart-page .cart_body .cart_info .cart_name .remove-item-cart {
     display: block;
-    color: #06428d
+    color: #ffb700
 }
 
 .cart-page .cart_body .cart_info .cart_name p {
@@ -159,7 +159,7 @@ h1 {
 
 .cart-page .cart_body .grid .cart__btn-remove {
     font-size: 13px;
-    color: #06428d
+    color: #ffb700
 }
 
 .cart-page .cart_body .grid .cart_quantity {
@@ -187,7 +187,7 @@ h1 {
     border: none;
     box-shadow: none;
     background-color: transparent;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     padding: 2px
 }
 
@@ -198,7 +198,7 @@ h1 {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background: #06428d;
+    background: #ffb700;
     float: left;
     color: #fff;
     text-align: center;
@@ -260,11 +260,11 @@ h1 {
 
 .cart-page .ajaxcart__footer .cart__btn-proceed-checkout-dt button {
     width: 100%;
-    background-color: #06428d;
+    background-color: #ffb700;
     color: #fff;
     text-align: center;
     line-height: 40px;
-    border: 1px solid #06428d
+    border: 1px solid #ffb700
 }
 
 .cart-page .ajaxcart__footer .cart__btn-proceed-checkout-dt button:hover {
@@ -402,7 +402,7 @@ h1 {
     border: none;
     box-shadow: none;
     background-color: transparent;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     padding: 2px
 }
 
@@ -463,7 +463,7 @@ h1 {
 }
 
 .cartheader .ajaxcart__footer .cart__subtotal .cart__totle .total-price {
-    color: #06428d;
+    color: #ffb700;
     font-weight: bold
 }
 
@@ -481,7 +481,7 @@ h1 {
 }
 
 .cartheader .ajaxcart__footer .cart__btn-proceed-checkout-dt button:hover {
-    background-color: #06428d
+    background-color: #ffb700
 }
 
 @media (max-width: 1199px) {
@@ -590,7 +590,7 @@ h1 {
         border: none;
         box-shadow: none;
         background-color: transparent;
-        border: 1px solid #06428d;
+        border: 1px solid #ffb700;
         padding: 2px
     }
 
@@ -651,7 +651,7 @@ h1 {
     }
 
     .cart-mobile .ajaxcart__footer .cart__subtotal .cart__totle .total-price {
-        color: #06428d;
+        color: #ffb700;
         font-weight: bold
     }
 
@@ -662,11 +662,11 @@ h1 {
 
     .cart-mobile .ajaxcart__footer .cart__btn-proceed-checkout-dt button {
         width: 100%;
-        background-color: #06428d;
+        background-color: #ffb700;
         color: #fff;
         text-align: center;
         line-height: 40px;
-        border: 1px solid #06428d
+        border: 1px solid #ffb700
     }
 
     .cart-mobile .ajaxcart__footer .cart__btn-proceed-checkout-dt button:hover {
@@ -698,7 +698,7 @@ h1 {
     height: 8px;
     top: 0px;
     border-radius: 5px;
-    background-color: #06428d;
+    background-color: #ffb700;
     -webkit-animation: progress_bar_fill 2s linear infinite;
     animation: progress_bar_fill 2s linear infinite;
     background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
@@ -727,7 +727,7 @@ h1 {
 }
 
 .thump-check .dot.active {
-    background: #06428d
+    background: #ffb700
 }
 
 @keyframes progress_bar_fill {
@@ -784,8 +784,8 @@ h1 {
 }
 
 .r-bill .checkbox .regular-checkbox:checked+.box {
-    background: #06428d;
-    border: 2px solid #06428d
+    background: #ffb700;
+    border: 2px solid #ffb700
 }
 
 .r-bill .checkbox .regular-checkbox:checked+.box:after {
@@ -985,7 +985,7 @@ form h4 {
     margin-right: 30px;
     display: flex;
     align-items: center;
-    border: 2px solid #06428d;
+    border: 2px solid #ffb700;
     background: #fff
 }
 
@@ -993,7 +993,7 @@ form h4 {
     min-width: 75px;
     height: 75px;
     display: flex;
-    border-right: 1px solid #06428d;
+    border-right: 1px solid #ffb700;
     display: block;
     position: relative
 }
@@ -1023,7 +1023,7 @@ form h4 {
     background-color: #fff;
     border-width: 1px;
     border-style: solid;
-    border-color: transparent #06428d #06428d transparent;
+    border-color: transparent #ffb700 #ffb700 transparent;
     border-image: initial;
     position: absolute;
     border-radius: 50%;
@@ -1087,7 +1087,7 @@ form h4 {
 }
 
 .section_coupon .swiper-slide .content_wrap .content-bottom span {
-    color: #06428d;
+    color: #ffb700;
     font-size: 12px
 }
 
@@ -1114,7 +1114,7 @@ form h4 {
     width: 25px;
     height: 25px;
     font-size: 14px;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     border-radius: 99px;
     position: absolute;
     right: 10px;
@@ -1124,7 +1124,7 @@ form h4 {
 .section_coupon .swiper-slide .content_wrap .info-button svg {
     width: 10px;
     height: 10px;
-    fill: #06428d
+    fill: #ffb700
 }
 
 .section_coupon .swiper-slide .content_wrap .info-button:hover svg {
@@ -1180,7 +1180,7 @@ form h4 {
     display: block;
     width: 100%;
     padding: 10px;
-    background: #06428d;
+    background: #ffb700;
     color: #fff
 }
 
@@ -1220,5 +1220,5 @@ form h4 {
 .popup-coupon .content ul li span:first-child {
     min-width: 126px;
     display: inline-block;
-    color: #06428d
+    color: #ffb700
 }

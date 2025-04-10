@@ -21,7 +21,7 @@
     background-color: #fff;
     z-index: 8011;
     border-radius: 0px;
-    border: 2px solid #06428d
+    border: 2px solid #ffb700
 }
 
 #quick-view-product .quick-view-product .quickview-close {
@@ -96,7 +96,7 @@
 }
 
 #quick-view-product .thumbs_list_quickview ul .swiper-slide.active a {
-    border: 1px solid #06428d
+    border: 1px solid #ffb700
 }
 
 #quick-view-product .product-info {
@@ -111,8 +111,8 @@
 }
 
 #quick-view-product .product-info::-webkit-scrollbar-thumb {
-    background-color: #06428d;
-    outline: 1px solid #06428d
+    background-color: #ffb700;
+    outline: 1px solid #ffb700
 }
 
 #quick-view-product .product-info::-webkit-scrollbar {
@@ -138,7 +138,7 @@
 }
 
 #quick-view-product .group-status .left_vend .first_status .status_name {
-    color: #06428d
+    color: #ffb700
 }
 
 #quick-view-product .group-status .line_tt {
@@ -222,7 +222,7 @@
 }
 
 #quick-view-product .form_product_content .soluong1 .input_number_product .btn_num:hover {
-    background: #06428d
+    background: #ffb700
 }
 
 #quick-view-product .form_product_content .soluong1 .input_number_product .btn_num svg {
@@ -252,7 +252,7 @@
     border: initial;
     height: 45px;
     padding: 0 20px;
-    background: #06428d;
+    background: #ffb700;
     color: #fff;
     text-transform: uppercase;
     width: 100%;
@@ -279,7 +279,7 @@
 }
 
 #quick-view-product .swatch .header .value-roperties {
-    color: #06428d
+    color: #ffb700
 }
 
 #quick-view-product .swatch .swatch-element {
@@ -311,8 +311,8 @@
 }
 
 #quick-view-product .swatch .swatch-element input:checked+label {
-    background: #06428d;
-    border-color: #06428d;
+    background: #ffb700;
+    border-color: #ffb700;
     color: #fff
 }
 
@@ -340,12 +340,12 @@
     margin-top: 40px;
     margin-bottom: 20px;
     position: relative;
-    border: 2px solid #06428d
+    border: 2px solid #ffb700
 }
 
 #quick-view-product .khuyen-mai .title {
     width: auto;
-    color: #06428d;
+    color: #ffb700;
     font-weight: 600;
     background: #fff;
     border-radius: 20px;
@@ -354,7 +354,7 @@
     display: inline-flex;
     padding: 5px 15px;
     align-items: center;
-    border: 2px solid #06428d;
+    border: 2px solid #ffb700;
     position: absolute;
     top: -24px
 }

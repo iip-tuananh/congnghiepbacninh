@@ -85,11 +85,11 @@
 }
 
 .nav_pagi .pagination .page-link:hover {
-    background-color: #06428d;
+    background-color: #ffb700;
     color: #fff;
-    background: #06428d;
+    background: #ffb700;
     font-weight: bold;
-    border-color: #06428d
+    border-color: #ffb700
 }
 
 .nav_pagi .pagination .page-link svg {
@@ -108,9 +108,9 @@
 }
 
 .nav_pagi .pagination .page-item.active .page-link {
-    background-color: #06428d;
-    border-color: #06428d;
-    background: #06428d;
+    background-color: #ffb700;
+    border-color: #ffb700;
+    background: #ffb700;
     color: #fff;
     display: block;
     font-weight: bold

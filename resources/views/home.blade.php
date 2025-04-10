@@ -70,6 +70,82 @@
     </section>
 {{-- dnhmuc đầu trang ======================================================= --}}
 
+
+    {{-- phần sản phẩm nổi bật======================================================== --}}
+    <section class="section_danhmuc">
+        <div class="container">
+            <div class="row">
+
+                <h3 class="title-index">
+                    <a class="title-name" href="{{ route('flashSale') }}" title="DANH MỤC NỔI BẬT"><span
+                            class="vienchu">SẢN PHẨM </span><b>NỔI BẬT</b>
+                    </a>
+                </h3>
+                <div class="danhmuc-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        @foreach ($homePro as $pro)
+                            <div class="swiper-slide">
+                                @include('layouts.product.item', ['pro' => $pro])
+                            </div>
+                        @endforeach
+
+                    </div>
+                    <div class="swiper-button-next">
+                    </div>
+                    <div class="swiper-button-prev">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Dừng khi hover
+
+        var swiperdanhmuc = new Swiper('.danhmuc-slider', {
+            slidesPerView: 5,
+            slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
+            spaceBetween: 10,
+            loopAdditionalSlides: 5,
+            grabCursor: true,
+            roundLengths: true,
+            slideToClickedSlide: false,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: '.danhmuc-slider .swiper-button-next',
+                prevEl: '.danhmuc-slider .swiper-button-prev',
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2
+                },
+                500: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2
+                },
+                768: {
+                    slidesPerView: 3,
+                    slidesPerColumn: 2
+                },
+                991: {
+                    slidesPerView: 4,
+                    slidesPerColumn: 2
+                },
+                1200: {
+                    slidesPerView: 5,
+                    slidesPerColumn: 2
+                }
+            }
+        });
+
+        // Dừng khi hover
+    </script>
+
+{{-- 
     <section class="section_danhmuc">
         <div class="container">
             <h3 class="title-index">
@@ -98,9 +174,7 @@
 
                                 </div>
                                 <h5 class="text-center tuan-h6">
-                                    {{-- <span class="text-uppercase"> --}}
-
-                                    {{-- </span> --}}
+                               
                                     {{ languageName($item->name) }}
                                 </h5>
                             </a>
@@ -158,7 +232,7 @@
                 }
             }
         });
-    </script>
+    </script> --}}
 
 <section class="section_flashsale">
     <div class="container">
@@ -166,33 +240,7 @@
             <a class="title-name" href="{{ route('flashSale') }}" title="DEAL CỰC HẤP DẪN">
                 <b>DEAL</b> <span class="vienchu">CỰC HẤP DẪN</span>
                 <style>
-                    .vienchu {
-                        font-family: 'Arial', sans-serif;
-                        /* Font chữ */
-                        font-weight: bold;
-                        /* Chữ đậm */
-                        color: #fff;
-                        /* Màu chữ trắng */
-                        text-shadow:
-                            -1px -1px 0 #06428d,
-                            /* Viền trên trái */
-                            1px -1px 0 #06428d,
-                            /* Viền trên phải */
-                            -1px 1px 0 #06428d,
-                            /* Viền dưới trái */
-                            1px 1px 0 #06428d,
-                            /* Viền dưới phải */
-                            -1px 0 0 #06428d,
-                            /* Viền trái */
-                            1px 0 0 #06428d,
-                            /* Viền phải */
-                            0 -1px 0 #06428d,
-                            /* Viền trên */
-                            0 1px 0 #06428d;
-                        /* Viền dưới */
-                        text-align: center;
-                        /* Căn giữa chữ */
-                    }
+                
 
                     .vienchu:hover {
                         color: #f25c05;
@@ -278,79 +326,6 @@
 </section>
 
 
-    {{-- phần sản phẩm nổi bật======================================================== --}}
-    <section class="section_danhmuc">
-        <div class="container">
-            <div class="row">
-
-                <h3 class="title-index">
-                    <a class="title-name" href="{{ route('flashSale') }}" title="DANH MỤC NỔI BẬT"><span
-                            class="vienchu">SẢN PHẨM </span><b>NỔI BẬT</b>
-                    </a>
-                </h3>
-                <div class="danhmuc-slider swiper-container">
-                    <div class="swiper-wrapper">
-                        @foreach ($homePro as $pro)
-                            <div class="swiper-slide">
-                                @include('layouts.product.item', ['pro' => $pro])
-                            </div>
-                        @endforeach
-
-                    </div>
-                    <div class="swiper-button-next">
-                    </div>
-                    <div class="swiper-button-prev">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-        // Dừng khi hover
-
-        var swiperdanhmuc = new Swiper('.danhmuc-slider', {
-            slidesPerView: 5,
-            slidesPerColumn: 2,
-            slidesPerColumnFill: 'row',
-            spaceBetween: 10,
-            loopAdditionalSlides: 5,
-            grabCursor: true,
-            roundLengths: true,
-            slideToClickedSlide: false,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            navigation: {
-                nextEl: '.danhmuc-slider .swiper-button-next',
-                prevEl: '.danhmuc-slider .swiper-button-prev',
-            },
-            breakpoints: {
-                300: {
-                    slidesPerView: 2,
-                    slidesPerColumn: 2
-                },
-                500: {
-                    slidesPerView: 2,
-                    slidesPerColumn: 2
-                },
-                768: {
-                    slidesPerView: 3,
-                    slidesPerColumn: 2
-                },
-                991: {
-                    slidesPerView: 4,
-                    slidesPerColumn: 2
-                },
-                1200: {
-                    slidesPerView: 5,
-                    slidesPerColumn: 2
-                }
-            }
-        });
-
-        // Dừng khi hover
-    </script>
 
 {{-- phần khuyến mãi --}}
 <section class="section_3_banner">
@@ -588,7 +563,7 @@
     </script>
      </section>
     {{-- phần tin tức mới nhất======================================================== --}}
-    <section class="section_blog">
+    {{-- <section class="section_blog">
         <div class="container">
             <h3 class="title-index">
                 <a class="title-name" href="#tintuc" id="tintuc"title="TIN TỨC MỚI NHẤT"><span class="vienchu">TIN
@@ -599,7 +574,6 @@
                 <div class="col-md-5">
                     @foreach ($hotnews as $key => $blog)
                         @if ($key == 0)
-                            {{-- Hiển thị blog đầu tiên --}}
                             <div class="item-blog-big">
                                 <div class="block-thumb">
                                     <a class="thumb" href="{{ route('detailBlog', ['slug' => $hotnews[0]->slug]) }}"
@@ -627,7 +601,6 @@
                 <div class="col-md-7">
                     @foreach ($hotnews as $key => $blog)
                         @if ($key > 0 && $key <= 3)
-                            {{-- Hiển thị 3 blog tiếp theo --}}
                             <div class="item-blog-small">
                                 <div class="block-thumb">
                                     <a class="thumb" href="{{ route('detailBlog', ['slug' => $blog->slug]) }}"
@@ -653,7 +626,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     {{-- end phần tin tức mới nhất======================================================== --}}
     <section class="section_thuonghieu">
         <div class="container">

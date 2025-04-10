@@ -161,7 +161,7 @@
 .layout-product .inventory_quantity .thump-break .a-stock,
 .layout-product .inventory_quantity .thump-break .a-vendor,
 .layout-product .inventory_quantity .thump-break .variant-sku {
-    color: #06428d
+    color: #ffb700
 }
 
 .layout-product .product-summary {
@@ -188,7 +188,7 @@
 }
 
 .layout-product .swatch .header .value-roperties {
-    color: #06428d
+    color: #ffb700
 }
 
 .layout-product .swatch .swatch-element {
@@ -220,8 +220,8 @@
 }
 
 .layout-product .swatch .swatch-element input:checked+label {
-    background: #06428d;
-    border-color: #06428d;
+    background: #ffb700;
+    border-color: #ffb700;
     color: #fff
 }
 
@@ -277,7 +277,7 @@
 }
 
 .layout-product .button_actions .add_to_cart .icon svg path {
-    fill: #06428d
+    fill: #ffb700
 }
 
 .layout-product .button_actions .add_to_cart .text {
@@ -314,7 +314,7 @@
     border: initial;
     height: 50px;
     padding: 0 20px;
-    background: #06428d;
+    background: #ffb700;
     color: #fff;
     text-transform: uppercase;
     width: 100%;
@@ -334,7 +334,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #06428d;
+    background: #ffb700;
     overflow: hidden
 }
 
@@ -447,12 +447,12 @@
     width: auto;
     color: #000;
     font-weight: 600;
-    background: #06428d;
+    background: #ffb700;
     font-size: 14px;
     display: inline-flex;
     padding: 5px 15px;
     align-items: center;
-    border: 2px solid #06428d
+    border: 2px solid #ffb700
 }
 
 .khuyen-mai .title img {
@@ -514,7 +514,7 @@
 
 .chinhsach-pro .item .text .title {
     display: block;
-    color: #06428d;
+    color: #ffb700;
     font-size: 16px;
     font-weight: 600
 }
@@ -547,14 +547,14 @@
     align-items: center;
     background: #fff;
     margin-bottom: 0;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     overflow: hidden
 }
 
 .product-tab .tabs-title .tab-link h3 span {
     font-size: 16px;
     font-weight: 700;
-    color: #ffffff !important;!i;!;
+    color: #000000 !important;!i;!;
     padding: 10px 15px
 }
 
@@ -567,7 +567,7 @@
 
 .product-tab .tabs-title .tab-link.active h3,
 .product-tab .tabs-title .tab-link:hover h3 {
-    background: #06428d
+    background: #ffb700
 }
 
 .product-tab .tabs-title .tab-link.active h3 span,
@@ -668,9 +668,9 @@
     cursor: pointer;
     padding: 5px 15px;
     font-size: 16px;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     border-radius: 5px;
-    color: #06428d;
+    color: #ffb700;
     margin-top: 20px
 }
 
@@ -723,7 +723,7 @@
     height: 8px;
     top: 0px;
     border-radius: 5px;
-    background-color: #06428d;
+    background-color: #ffb700;
     -webkit-animation: progress_bar_fill 2s linear infinite;
     animation: progress_bar_fill 2s linear infinite;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
@@ -811,7 +811,7 @@
 }
 
 .thong-so .title b {
-    color: #06428d
+    color: #ffb700
 }
 
 .thong-so .content li {
@@ -897,7 +897,7 @@
 .support-product .content a {
     font-size: 20px;
     font-weight: 700;
-    color: #06428d
+    color: #ffb700
 }
 
 .support-product .content a:hover {
@@ -917,7 +917,7 @@
 }
 
 .camket .title b {
-    color: #06428d
+    color: #ffb700
 }
 
 .camket ul {
@@ -1067,7 +1067,7 @@
 }
 
 .product-like .title-header-col span b {
-    color: #06428d
+    color: #ffb700
 }
 
 @media (max-width: 991px) and (min-width: 767px) {
@@ -1193,7 +1193,7 @@
 
 .flashsale_product .elio-productcount {
     padding: 10px;
-    background: #06428d
+    background: #ffb700
 }
 
 .flashsale_product .elio-productcount .countdown {
@@ -1247,7 +1247,7 @@
     margin-right: 30px;
     display: flex;
     align-items: center;
-    border: 2px solid #06428d;
+    border: 2px solid #ffb700;
     background: #fff
 }
 
@@ -1255,7 +1255,7 @@
     min-width: 75px;
     height: 75px;
     display: flex;
-    border-right: 1px solid #06428d;
+    border-right: 1px solid #ffb700;
     display: block;
     position: relative
 }
@@ -1286,7 +1286,7 @@
     background-color: #fff;
     border-width: 1px;
     border-style: solid;
-    border-color: transparent #06428d #06428d transparent;
+    border-color: transparent #ffb700 #ffb700 transparent;
     border-image: initial;
     position: absolute;
     border-radius: 50%;
@@ -1350,7 +1350,7 @@
 }
 
 .section_coupon .swiper-slide .content_wrap .content-bottom span {
-    color: #06428d;
+    color: #ffb700;
     font-size: 12px
 }
 
@@ -1377,7 +1377,7 @@
     width: 25px;
     height: 25px;
     font-size: 14px;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     border-radius: 99px;
     position: absolute;
     right: 10px;
@@ -1387,7 +1387,7 @@
 .section_coupon .swiper-slide .content_wrap .info-button svg {
     width: 10px;
     height: 10px;
-    fill: #06428d
+    fill: #ffb700
 }
 
 .section_coupon .swiper-slide .content_wrap .info-button:hover svg {
@@ -1443,7 +1443,7 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background: #06428d;
+    background: #ffb700;
     color: #fff
 }
 
@@ -1483,7 +1483,7 @@
 .popup-coupon .content ul li span:first-child {
     min-width: 126px;
     display: inline-block;
-    color: #06428d
+    color: #ffb700
 }
 
 .popup-video {
@@ -1551,7 +1551,7 @@
     bottom: 10px;
     left: 10px;
     padding: 5px 10px;
-    box-shadow: 0 0px 2px 0 #06428d, 0 0px 6px 0px #06428d;
+    box-shadow: 0 0px 2px 0 #ffb700, 0 0px 6px 0px #ffb700;
     background: #fff
 }
 

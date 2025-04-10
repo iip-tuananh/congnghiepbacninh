@@ -42,7 +42,7 @@
                 <ul class="ul-control">
                     <li class="header-wishlist d-md-flex d-none">
                         <div class="icon">
-                            <i class='bx bx-phone bx-tada' style='color:#ff4900 ; font-size:36px'  ></i>
+                            <i class='bx bx-phone bx-tada' style='color:#ff4900 ; font-size:44px'  ></i>
                         </div>
                          <a class="thumb" title="Liên hệ " href="tel:+{{ $setting->phone1 }}">
                             <div class="title">
@@ -56,9 +56,9 @@
                     </li>
                     <li class="header-cart block-cart d-flex">
                         <div class="icon">
-                            <i class='bx bx-cart bx-tada' style='color:#ff4900 ; font-size:36px'  ></i>                        </div>
-                        {{-- phần giở hàng --}}
-                        <a class="thumb" href="{{ route('listCart') }}" title="Giỏ hàng" id="giohang-tuan">
+                            {{-- <i class='bx bx-cart bx-tada' style='color:#ff4900 ; font-size:36px'  ></i>                        </div> --}}
+                       
+                        {{-- <a class="thumb" href="{{ route('listCart') }}" title="Giỏ hàng" id="giohang-tuan">
                             <div class="title">
                                 Giỏ hàng
                             </div>
@@ -66,12 +66,8 @@
                                 <span class="count count_item_pr">0</span>
                                 Sản phẩm
                             </div>
-                        </a>
-                        {{-- end phần giỏ hàng --}}
-                        {{-- <div class="top-cart-content">
-                            <div class="CartHeaderContainer">
-                            </div>
-                        </div> --}}
+                        </a> --}}
+                    
                     </li>
                 </ul>
             </div>
@@ -182,7 +178,7 @@
                         </li>
                     
 
-                        <li class="nav-item  ">
+                        {{-- <li class="nav-item  ">
                             <a class="a-img" href="{{ route('allListBlog') }}" title="Tin tức">
                                 Tin tức
                             </a>
@@ -191,7 +187,7 @@
                             <a class="a-img" href="{{ route('lienHe') }}" title="Liên hệ">
                                 Liên hệ
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="d-block d-lg-none title-danhmuc"><span>Danh mục sản phẩm</span></li>
                         <li class="nav-item d-block d-lg-none  danhmuc">
                             @foreach ($categoryhome as $pro)

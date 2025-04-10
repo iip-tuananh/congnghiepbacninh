@@ -19,12 +19,12 @@
              <a title="Sản phẩm khuyến mãi" class="nav-link"
                 href="{{route('flashSale')}}">Sản phẩm nổi bật</a>
           </li>
-          <li class="nav-item  relative">
+          {{-- <li class="nav-item  relative">
              <a title="Tin tức" class="nav-link" href="{{route('allListBlog')}}">Tin tức</a>
           </li>
           <li class="nav-item  relative">
              <a title="Liên hệ" class="nav-link" href="{{route('lienHe')}}">Liên hệ</a>
-          </li>
+          </li> --}}
         
        </ul>
     </nav>

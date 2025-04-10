@@ -1,19 +1,22 @@
 @php
-$img = json_decode($pro->images);
+    $img = json_decode($pro->images);
 @endphp
-<form action="{{ route('add.to.cart') }}" method="post" class="variants product-action" data-cart-form data-id="{{$pro->id}}"
-   enctype="multipart/form-data">
-   @csrf
-   <a href="{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}">
-      <div class="product-thumbnail">
-         @php
-         $img = json_decode($pro->images);
-         @endphp
-         <img style="width: 100%; height: 100%px;" src="{{ $img[0] }}" data-src="{{ $img[0] }}">
+<form action="{{ route('add.to.cart') }}" method="post" class="variants product-action" data-cart-form
+    data-id="{{ $pro->id }}" enctype="multipart/form-data">
+    @csrf
 
-         
-         <span class="smart">HOT</span>
-         {{-- 
+
+    <a
+        href="{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}">
+        <div class="product-thumbnail">
+            @php
+                $img = json_decode($pro->images);
+            @endphp
+            <img style="width: 100%; height: 100%px;" src="{{ $img[0] }}" data-src="{{ $img[0] }}">
+
+
+            <span class="smart">HOT</span>
+            {{-- 
    <a title="Xem nhanh" href="/demo-san-pham-thuoc-tinh"
       data-handle="demo-san-pham-thuoc-tinh" class="quick-view">
    <svg width="20" height="20" viewBox="0 0 20 20" fill="#000"
@@ -23,63 +26,82 @@ $img = json_decode($pro->images);
    </path>
    </svg>
    </a> --}}
-   <ul class="group-tag">
-    @if ($pro->discount > 0)
-    @php
-    $discountPrice = round((($pro->price - $pro->discount) * 100) / $pro->price);
-    @endphp
-    <li>
-    <span>{{ $discountPrice }}%</span>
-    </li>
- @endif
-   </ul>
-   </div>
-   <div class="product-info">
-      <h3 class="product-name">
-         <a class="text-one-line"
-            href="{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}"
-            title="{{ $pro->name }}">{{ $pro->name }}</a>
-      </h3>
+            <ul class="group-tag">
+                @if ($pro->discount > 0)
+                    @php
+                        $discountPrice = round((($pro->price - $pro->discount) * 100) / $pro->price);
+                    @endphp
+                    <li>
+                        <span>{{ $discountPrice }}%</span>
+                    </li>
+                @endif
+            </ul>
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">
+                <a class="text-one-line"
+                    href="{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}"
+                    title="{{ $pro->name }}">{{ $pro->name }}</a>
+            </h3>
 
 
-      <div class="price-box">
-         @if ($pro->price > 0)
-         @if ($pro->discount > 0)
-         <span class="special-price font-weight-bold">{{ number_format($pro->discount) }}₫</span>
-         <del class="old-price"> {{ number_format($pro->price) }}₫</del>
-         <div class="button-cunghang ">
-            <button class="but1 themgio" data-id="{{$pro->id}}">Thêm vào giỏ hàng</i></button>
-            {{-- <button class="but2" title="Xem chi tiết" type="button"
-               onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
-            Chi Tiết
-            </button> --}}
-         </div>
-         @else
-         <span class="special-price font-weight-bold">{{ number_format($pro->price) }}₫</span>
-         {{-- <del class="old-price"> {{ number_format($pro->price) }}₫</del> --}}
-         <div class="button-cunghang ">
-            <button class="but1 themgio" data-id="{{$pro->id}}">Thêm vào giỏ hàng</i></button>
-            {{-- <button class="but2" title="Xem chi tiết" type="button"
-               onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
-            Chi Tiết
-            </button> --}}
-         </div>
-         @endif
-         @else
-         <span class="special-price font-weight-bold dangcapnhat">Đang cập nhật</span>
-      
-           
-            <button class="btn-cart btn-views disabled" title="Xem chi tiết" type="button"
-               onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
-            Chi Tiết
-            </button>
-     
-         @endif
-      </div>
-     
-      <style>
-      </style>
-      {{-- <input class="hidden" type="hidden" name="variantId" value="111247355" /> --}}
-   </div>
-   </a>
+            <div class="price-box">
+                {{-- @if ($pro->price > 0)
+                    @if ($pro->discount > 0)
+                        <span class="special-price font-weight-bold">{{ number_format($pro->discount) }}₫</span>
+                        <del class="old-price"> {{ number_format($pro->price) }}₫</del>
+                        <div class="button-cunghang ">
+                            <button class="but1 themgio" data-id="{{ $pro->id }}">Thêm vào giỏ hàng</i></button>
+               
+                        </div>
+                    @else
+                        <span class="special-price font-weight-bold">{{ number_format($pro->price) }}₫</span>
+                        <div class="button-cunghang ">
+                            <button class="but1 themgio" data-id="{{ $pro->id }}">Thêm vào giỏ hàng</i></button>
+                 
+                        </div>
+                    @endif
+                @else
+                    <span class="special-price font-weight-bold dangcapnhat">Đang cập nhật</span>
+
+
+                    <button class="btn-cart btn-views disabled" title="Xem chi tiết" type="button"
+                        onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
+                        Chi Tiết
+                    </button>
+
+                @endif --}}
+                {{-- khách muốn sửa --}}
+                @if ($pro->price > 0)
+                @if ($pro->discount > 0)
+                    <span class="special-price font-weight-bold">{{ number_format($pro->discount) }}₫</span>
+                    <del class="old-price"> {{ number_format($pro->price) }}₫</del>
+                    <button class="btn-cart btn-views disabled" title="Xem chi tiết" type="button"
+                    onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
+                    Chi Tiết
+                </button>
+                @else
+                    <span class="special-price font-weight-bold">{{ number_format($pro->price) }}₫</span>
+                    <button class="btn-cart btn-views disabled" title="Xem chi tiết" type="button"
+                    onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
+                    Chi Tiết
+                </button>
+                @endif
+            @else
+                <span class="special-price font-weight-bold dangcapnhat">Đang cập nhật</span>
+
+
+                <button class="btn-cart btn-views disabled" title="Xem chi tiết" type="button"
+                    onclick="window.location.href='{{ route('detailProduct', ['cate' => $pro->cate_slug, 'type' => $pro->type_slug ? $pro->type_slug : 'loai', 'id' => $pro->slug]) }}'">
+                    Chi Tiết
+                </button>
+
+            @endif
+            </div>
+
+            <style>
+            </style>
+            {{-- <input class="hidden" type="hidden" name="variantId" value="111247355" /> --}}
+        </div>
+    </a>
 </form>

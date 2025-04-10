@@ -115,7 +115,7 @@
 }
 
 .section_2_banner .thumb-content .tag {
-    background: #06428d;
+    background: #ffb700;
     display: inline-block;
     padding: 5px 10px;
     color: #fff
@@ -133,7 +133,7 @@
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #06428d
+    color: #ffb700
 }
 
 @media (max-width: 991px) {
@@ -180,7 +180,7 @@
 }
 
 .section_1_banner .thumb-content .tag {
-    background: #06428d;
+    background: #ffb700;
     display: inline-block;
     padding: 5px 10px;
     color: #fff;
@@ -199,7 +199,7 @@
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #06428d
+    color: #ffb700
 }
 
 @media (max-width: 767px) {
@@ -312,7 +312,7 @@ section {
     display: block;
     font-weight: 600;
     padding: 5px 15px;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     color: #000;
     display: flex;
     align-items: center;
@@ -334,7 +334,7 @@ section {
 
 .section_product_tab .tabs-title .tab-link.current span,
 .section_product_tab .tabs-title .tab-link:hover span {
-    background: #06428d
+    background: #ffb700
 }
 
 .section_product_tab .tab-content {
@@ -377,7 +377,7 @@ section {
     display: inline-block;
     padding: 5px 15px;
     font-size: 16px;
-    border: 2px solid #06428d;
+    border: 2px solid #ffb700;
     color: #000
 }
 
@@ -408,7 +408,7 @@ section {
     display: block;
     padding: 5px 10px;
     border-radius: 5px;
-    background: #06428d;
+    background: #ffb700;
     color: #fff
 }
 
@@ -535,7 +535,7 @@ section {
     display: block;
     height: 8px;
     border-radius: 5px;
-    background-color: #06428d;
+    background-color: #ffb700;
     -webkit-animation: progress_bar_fill 2s linear infinite;
     animation: progress_bar_fill 2s linear infinite;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -663,7 +663,7 @@ section {
 }
 
 .section_about .thump-content .thump h2 b {
-    color: #06428d
+    color: #ffb700
 }
 
 .section_about .thump-content .thump .content {
@@ -836,7 +836,7 @@ section {
 
 .section_danhgia .item {
     text-align: left;
-    background: #06428d;
+    background: #ffb700;
     color: #000;
     padding: 30px;
     display: inline-block;
@@ -873,14 +873,14 @@ section {
 }
 
 .section_danhgia .item .avatar .testimonial span {
-    color: #06428d;
+    color: #ffb700;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 600
 }
 
 .section_danhgia .item .content {
-    color: #d7d7d7;
+    color: #000000;
     margin-top: 20px;
     font-size: 16px
 }
@@ -986,7 +986,7 @@ margin-right: 10px !important; /* Khoảng cách giữa các item */
 }
 .themgio{
     
-color: #ffffff;
+color: #000000;
     
 cursor: pointer;
     

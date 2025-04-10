@@ -128,7 +128,7 @@
          </div>
          <div class="blog_left_base col-lg-3 col-12">
            @include('layouts.menu.danhmuc')
-           @include('layouts.menu.tintuc')
+           {{-- @include('layouts.menu.tintuc') --}}
          </div>
       </div>
    </div>

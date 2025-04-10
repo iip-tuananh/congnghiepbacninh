@@ -34,6 +34,7 @@
     </style>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script>
+      
       window.__ENV__ = window.__ENV || {}; __ENV__.link ='https://congnghiepbacninh.com/';
       window.Laravel = {!!
           json_encode([

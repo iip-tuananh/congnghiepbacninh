@@ -3,8 +3,8 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: #06428d;
-    outline: 3px solid #06428d
+    background-color: #ffb700;
+    outline: 3px solid #ffb700
 }
 
 body {
@@ -374,7 +374,7 @@ ul {
 
 .product-action {
     box-shadow: 0 0 2px 0 rgba(60, 64, 67, .1), 0 0 6px 0 rgba(60, 64, 67, .25);
-    /* border: 2px solid #06428d; */
+    /* border: 2px solid #ffb700; */
     overflow: hidden;
     position: relative;
     background: #ffffff;
@@ -457,7 +457,7 @@ ul {
     background-color: inherit;
     transform-origin: bottom;
     transform: skew(-30deg);
-    background: #06428d
+    background: #ffb700
 }
 
 .product-action .product-thumbnail .group-tag li span {
@@ -629,8 +629,8 @@ ul {
 .product-action .btn-views {
     display: block;
     width: 100%;
-    background: #06428d;
-    color: #ffffff;
+    background: #ffb700;
+    color: #000000;
     border-radius: 5px;
     border: 0;
     font-weight: 700;
@@ -698,9 +698,9 @@ ul {
 }
 
 .footer .top-footer {
-    background: #06428d;
+    background: #ffb700;
     padding: 10px 0;
-    color: white;
+    color: #000000;
 }
 
 .footer .top-footer .row {
@@ -727,13 +727,13 @@ ul {
 }
 
 .footer .top-footer .section_chinhsach a .text {
-    color: #ffffff;
+    color: #000000;
     padding-left: 10px
 }
 
 .footer .top-footer .section_chinhsach a .text .title {
     display: block;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
     font-weight: 700
 }
@@ -787,7 +787,7 @@ ul {
 }
 
 .footer .mid-footer .group-address ul li svg path {
-    fill: #06428d
+    fill: #ffb700
 }
 
 .footer .mid-footer .group-address ul li span {
@@ -884,7 +884,7 @@ ul {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(-90deg);
-        background-color: #06428d;
+        background-color: #ffb700;
         transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out
     }
 
@@ -940,7 +940,7 @@ ul {
     font-size: 16px;
     color: #000;
     text-align: center;
-    background: #06428d
+    background: #ffb700
 }
 
 .footer #copyright .copy-right {
@@ -965,7 +965,7 @@ ul {
     .header-menu {
         position: relative;
         z-index: 9;
-        background: #06428d;
+        background: #ffb700;
     }
 
     .header-menu .header-menu-des {
@@ -1022,7 +1022,7 @@ ul {
         padding: 10px 0px;
         font-size: 16px;
         position: relative;
-        color: #ffffff;
+        color: #000;
         font-weight: 700;
         margin-right: 15px
     }
@@ -1297,7 +1297,7 @@ ul {
 
     .header-menu .header-menu-des .header-nav>ul.item_big>li.nav-item.has-mega .mega-content .level1.item>a:hover,
     .header-menu .header-menu-des .header-nav>ul.item_big>li.nav-item.has-mega .mega-content .level1.item>a:focus {
-        color: #06428d !important;
+        color: #ffb700 !important;
     }
 
     .header-menu .header-menu-des .header-nav>ul.item_big>li.nav-item.has-mega .mega-content .level1.item h2 {
@@ -1382,7 +1382,7 @@ ul {
     .header-nav .logo-sitenav {
         padding-top: 20px;
         padding-bottom: 20px;
-        border-bottom: 1px solid #06428d;
+        border-bottom: 1px solid #ffb700;
         text-align: center
     }
 
@@ -1501,7 +1501,7 @@ ul {
     .header-nav .item_big .title-danhmuc span {
         font-size: 14px;
         font-weight: bold;
-        color: #06428d;
+        color: #ffb700;
         display: block;
         position: relative;
         padding-left: 10px;
@@ -1510,7 +1510,7 @@ ul {
         text-align: center;
         line-height: 35px;
         pointer-events: none;
-        border: 1px solid #06428d
+        border: 1px solid #ffb700
     }
 
     .header-nav .item_big .account-mb {
@@ -1539,7 +1539,7 @@ ul {
 
     .header-nav .item_big .account-mb ul li a {
         display: block;
-        background: #06428d;
+        background: #ffb700;
         color: #fff;
         padding: 8px 5px;
         font-weight: 600
@@ -1606,7 +1606,7 @@ ul {
     padding: 5px 0;
     font-size: 14px;
     font-weight: 700;
-    background: #06428d
+    background: #ffb700
 }
 
 .topbar .swiper-slide {
@@ -1792,7 +1792,7 @@ header.header .vertical-menu-category .menu-vertical .nav-item>a {
     padding: 10px 30px 10px 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    background: #06428d;
+    background: #ffb700;
     color: #fff;
     font-weight: 700;
     font-size: 16px;
@@ -1902,7 +1902,7 @@ header.header .vertical-menu-category .menu-vertical .nav-item .product-thumb .i
     height: 100%;
     justify-content: center;
     color: #fff;
-    background: #06428d;
+    background: #ffb700;
     font-size: 18px
 }
 
@@ -2006,7 +2006,7 @@ header.header .header-control .ul-control li {
 header.header .header-control .ul-control li .icon {
     width: 40px;
     height: 40px;
-    /* border: 1px solid #06428d; */
+    /* border: 1px solid #ffb700; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2034,12 +2034,12 @@ header.header .header-control .ul-control li .icon svg {
 }
 
 header.header .header-control .ul-control li .icon svg path {
-    fill: #06428d
+    fill: #ffb700
 }
 
 @media (max-width: 767px) {
     header.header .header-control .ul-control li .icon {
-        background: #06428d
+        background: #ffb700
     }
 
     header.header .header-control .ul-control li .icon svg path {
@@ -2050,7 +2050,7 @@ header.header .header-control .ul-control li .icon svg path {
 header.header .header-control .ul-control li .thumb .title {
     font-size: 18px;
     color: #ff4900;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 @media (max-width: 767px) {
@@ -2099,7 +2099,8 @@ header.header .header-control .ul-control li .thumb .content>svg {
 }
 
 header.header .header-control .ul-control li .thumb .content {
-    color: #fff
+    color: #fff;
+    font-weight: 900;
 }
 
 header.header .header-control .ul-control li .thumb:hover .title {
@@ -2136,13 +2137,13 @@ header.header .header-control .ul-control li.header-account ul {
     background: #fff;
     border-radius: 5px 0 5px 5px;
     display: none;
-    border: 1px solid #06428d
+    border: 1px solid #ffb700
 }
 
 header.header .header-control .ul-control li.header-account ul:before {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #06428d;
+    border-bottom: 10px solid #ffb700;
     content: "";
     position: absolute;
     top: -10px;
@@ -2189,7 +2190,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content {
     right: 0;
     background: #fff;
     border-radius: 5px 0 5px 5px;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     overflow: inherit
 }
 
@@ -2393,8 +2394,8 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 }
 
 .menu_mega .aside-vetical-menu .list_menu_header .ul_menu::-webkit-scrollbar-thumb {
-    background-color: #06428d;
-    outline: 1px solid #06428d
+    background-color: #ffb700;
+    outline: 1px solid #ffb700
 }
 
 .menu_mega .aside-vetical-menu .list_menu_header .ul_menu::-webkit-scrollbar {
@@ -2469,7 +2470,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 }
 
 .menu_mega .aside-vetical-menu .list_menu_header .ul_menu .ul_content_right_1 {
-    border: 2px solid #06428d;
+    border: 2px solid #ffb700;
     position: absolute;
     left: 100%;
     height: 100%;
@@ -2492,8 +2493,8 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 }
 
 .menu_mega .aside-vetical-menu .list_menu_header .ul_menu .ul_content_right_1::-webkit-scrollbar-thumb {
-    background-color: #06428d;
-    outline: 1px solid #06428d
+    background-color: #ffb700;
+    outline: 1px solid #ffb700
 }
 
 @media (max-width: 1500px) {
@@ -2637,7 +2638,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 
 .menu_mega .aside-vetical-menu .list_menu_header .ul_menu .ul_content_right_1 .nav_item .ul_content_right_2 .nav_item:hover>a,
 .menu_mega .aside-vetical-menu .list_menu_header .ul_menu .ul_content_right_1 .nav_item .ul_content_right_2 .nav_item:focus>a {
-    color: #06428d;
+    color: #ffb700;
     text-decoration: none
 }
 
@@ -2700,7 +2701,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 }
 
 .search-smart .header-search-form button svg path {
-    fill: #06428d
+    fill: #ffb700
 }
 
 .search-suggest {
@@ -2740,7 +2741,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 .search-suggest .smart-search-title li a {
     padding: 5px 10px;
     display: block;
-    background: #06428d;
+    background: #ffb700;
     color: #fff
 }
 
@@ -2777,7 +2778,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 }
 
 .list-search-style .title-search span:before {
-    background: #06428d;
+    background: #ffb700;
     content: '';
     right: 0;
     left: 0;
@@ -2790,13 +2791,13 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 }
 
 .list-search-style .see-more {
-    color: #06428d;
+    color: #ffb700;
     padding: 8px 30px;
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
     margin-top: 15px;
-    border: 2px solid #06428d;
+    border: 2px solid #ffb700;
     width: 100%
 }
 
@@ -3022,7 +3023,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
     position: fixed;
     right: auto;
     overflow: hidden;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     border-radius: 5px
 }
 
@@ -3061,7 +3062,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 }
 
 .jas-sale-pop h4 {
-    color: #06428d;
+    color: #ffb700;
     margin: 0;
     font-size: 14px;
     font-weight: normal;
@@ -3194,7 +3195,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 
 .group_title_index {
     display: flex;
-    border-bottom: 1px solid #06428d;
+    border-bottom: 1px solid #ffb700;
     margin-bottom: 40px;
     justify-content: space-between;
     align-items: center
@@ -3211,9 +3212,9 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 .group_title_index .title {
     display: inline-flex;
     align-items: center;
-    background: #06428d;
+    background: #ffb700;
     margin-bottom: 0;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     border-bottom: 0;
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%)
 }
@@ -3221,7 +3222,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 @media (max-width: 991px) {
     .group_title_index .title {
         margin-bottom: 10px;
-        border-bottom: 1px solid #06428d
+        border-bottom: 1px solid #ffb700
     }
 }
 
@@ -3260,7 +3261,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 .group_title_index .menu-title li {
     display: inline-block;
     margin-left: 10px;
-    border: 1px solid #06428d;
+    border: 1px solid #ffb700;
     border-radius: 5px
 }
 
@@ -3272,7 +3273,7 @@ header.header .header-control .ul-control li.header-cart .top-cart-content:after
 }
 
 .group_title_index .menu-title li a {
-    color: #06428d;
+    color: #ffb700;
     padding: 5px 10px;
     display: block;
     font-size: 16px
@@ -3482,14 +3483,14 @@ img.lazyload.loaded {
 
 .title-index a:hover,
 .title-page a:hover {
-    color: #06428d
+    color: #ffb700
 }
 
 .see-more {
     display: inline-block;
     padding: 5px 15px;
     font-size: 16px;
-    border: 2px solid #06428d;
+    border: 2px solid #ffb700;
     color: #000;
     margin-top: 0px
 }
@@ -3512,12 +3513,12 @@ img.lazyload.loaded {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    color: #06428d !important
+    color: #ffb700 !important
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background: #06428d !important
+    background: #ffb700 !important
 }
 
 .swiper-button-next:hover:after,
@@ -3546,7 +3547,7 @@ img.lazyload.loaded {
 .backtop {
     position: fixed;
     top: auto !important;
-    background: #06428d;
+    background: #ffb700;
     height: 40px;
     width: 40px;
     text-align: center;
@@ -3808,7 +3809,7 @@ img.lazyload.loaded {
     width: 48px;
     left: 0;
     top: 0;
-    background: #06428d;
+    background: #ffb700;
     border-radius: 50%
 }
 
@@ -3954,7 +3955,7 @@ img.lazyload.loaded {
     border-radius: 50%;
     border: 1px solid #ffffff;
     cursor: pointer;
-    background: #06428d;
+    background: #ffb700;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3976,7 +3977,7 @@ img.lazyload.loaded {
 }
 
 .popup-sapo .content {
-    background: #06428d;
+    background: #ffb700;
     color: #fff;
     padding: 20px 10px 40px;
     border-radius: 10px;
@@ -4091,7 +4092,7 @@ img.lazyload.loaded {
 .popup-ngonngu .icon {
     width: 40px;
     height: 40px;
-    background: #06428d;
+    background: #ffb700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4168,7 +4169,7 @@ img.lazyload.loaded {
 .but1 {
     display: block;
     width: 100%;
-    background: #06428d;
+    background: #ffb700;
     color: #ffffff;
     border-radius: 5px;
     border: 0;
@@ -4178,7 +4179,7 @@ img.lazyload.loaded {
 }
 .but2 {
     width: 85% !important;
-    background-color: #06428d;
+    background-color: #ffb700;
     border: none;
     color: #ffffff;
     font-weight: 700;
@@ -4191,7 +4192,7 @@ img.lazyload.loaded {
 .ft-cus{
     border-top: 4px solid #000536be;
     padding: 15px!important;
-    background-color: #06428d;
+    background-color: #ffb700;
     color: #fff3cd !important;
 }
 .logo-ft{
@@ -4293,7 +4294,7 @@ img.lazyload.loaded {
     margin: 0;
 }
 .header-tuan{
-    background-color: #06428d !important;
+    background-color: #000000 !important;
     border-bottom: 2px solid #7c3402;
 }
 .logotop{
@@ -4338,16 +4339,16 @@ img.lazyload.loaded {
     outline: none;
     padding: 10px;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     background-color: transparent;
 }
 
 .custom-search-input::placeholder {
-    color: #b0c4de;
+    color: #000000;
 }
 
 .custom-search-button {
-    background-color: #2ac3a2;
+    background-color: #ffb700;
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -4361,7 +4362,7 @@ img.lazyload.loaded {
 }
 
 .custom-search-button:hover {
-    background-color: #1e9e7a;
+    background-color: #ffb700;
 }
 
 .custom-search-button svg {
@@ -4473,12 +4474,11 @@ img.lazyload.loaded {
 .cus-lien {
     display: block; /* Đảm bảo thẻ a chiếm toàn bộ độ rộng */
     text-align: center; /* Căn giữa nội dung */
-    background-color: #ff0000; /* Màu nền đỏ đậm */
+    background-color: #c30101; /* Màu nền đỏ đậm */
     color: #fff; /* Màu chữ trắng */
     padding: 10px 20px; /* Khoảng cách bên trong */
     border-radius: 5px; /* Bo góc */
     font-size: 18px; /* Kích thước chữ lớn hơn */
-  
     text-decoration: none; /* Xóa gạch chân */
     transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
     width: 100%; /* Đảm bảo thẻ a chiếm toàn bộ chiều rộng */
@@ -4495,7 +4495,7 @@ img.lazyload.loaded {
     background-color: #ff4d4d; /* Màu nền sáng hơn khi hover */
 }
 .editnen{
-    background-color: #06428d !important;
+    background-color: #ffb700 !important;
     border-radius: 10px;
     padding: 5px;
     color: #fff3cd !important;
@@ -4513,7 +4513,7 @@ img.lazyload.loaded {
         width: 148%;
         display: flex;
         align-items: center;
-        background-color: #1e3a5f;
+        background-color: #ffffff;
         border-radius: 25px;
         overflow: hidden;
         padding: 5px 10px;
@@ -4566,7 +4566,7 @@ body {
 .goiy-list .but1{
     padding: 7px !important;
     font-size: 13px !important;
-    background-color: #06428d !important;
+    background-color: #ffb700 !important;
 }
 .goiy-list .but1:hover{
    
@@ -4579,7 +4579,7 @@ body {
     position: fixed !important;
     bottom: 163px !important;
     right: 23px !important;
-    background-color:#06428d !important;
+    background-color:#ffb700 !important;
     font-size: 35px !important;
     height: 48px !important;
     width: 48px !important;

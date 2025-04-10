@@ -146,9 +146,9 @@
                                         <input type="hidden" name="product_id" value="{{ $product->id }}">
                                         <div class="price-box clearfix">
                                             @if ($product->price > 0)
-                                                @if ($product->discount >0)
-                                                    
-                                                    <span class="special-price font-weight-bold">{{ number_format($product->discount) }}₫</span>
+                                                @if ($product->discount > 0)
+                                                    <span
+                                                        class="special-price font-weight-bold">{{ number_format($product->discount) }}₫</span>
                                                     <del class="old-price"> {{ number_format($product->price) }}₫</del>
                                                 @else
                                                     <span
@@ -161,9 +161,9 @@
                                             <!-- Giás gốc -->
                                         </div>
                                         @if ($product->price > 0)
-                                            <div class="form-product">
+                                            {{-- <div class="form-product">
                                                 <div class="box-variant clearfix  d-none ">
-                                                    {{-- <input type="hidden" id="one_variant" name="variantId" value="97528099" /> --}}
+                                                 
                                                 </div>
                                                 <div class="clearfix form-group ">
                                                     <div class="flex-quantity">
@@ -207,22 +207,42 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        @else
-                                        
+                                            </div> --}}
                                             <div class="form-product">
-                                                <div class="box-variant clearfix  d-none ">
-                                                    {{-- <input type="hidden" id="one_variant" name="variantId" value="97528099" /> --}}
-                                                </div>
+                                              
                                                 <div class="clearfix form-group ">
                                                     <div class="flex-quantity">
 
                                                         <div class="btn-mua button_actions clearfix">
-                                                          <a href="{{route('lienHe')}}" class="cus-lien">Liên Hệ
-                                                            <br> <p>Để đc tư vấn</p>
-                                                          </a>
-                                                            
-                                                            
+                                                            <a href="tel:{{ $setting->phone1 }}" class="cus-lien">Liên Hệ {{$setting->phone1}}
+                                                                <br>
+                                                                <p>Để đc tư vấn</p>
+                                                            </a>
+
+
+                                                            <br>
+                                                        </div>
+                                                        <div class="btn-mua button_actions clearfix">
+                                                            <span>
+                                                                {!! languageName($product->description) !!}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @else
+                                            <div class="form-product">
+                                              
+                                                <div class="clearfix form-group ">
+                                                    <div class="flex-quantity">
+
+                                                        <div class="btn-mua button_actions clearfix">
+                                                            <a href="tel:{{ $setting->phone1 }}" class="cus-lien">Liên Hệ {{$setting->phone1}}
+                                                                <br>
+                                                                <p>Để đc tư vấn</p>
+                                                            </a>
+
+
                                                             <br>
                                                         </div>
                                                         <div class="btn-mua button_actions clearfix">
@@ -248,28 +268,23 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <img src="{{asset('frontend/img/camket_1.png')}}"
-                                                alt="cam kết">
-                                            <span>Cam kết 100% chính hãng</span>
+                                            <img src="{{ asset('frontend/img/camket_1.png') }}" alt="cam kết">
+                                            <span>Cam kết 100% hàng mới</span>
                                         </li>
                                         <li>
-                                            <img src="{{asset('frontend/img/camket_2.png')}}"
-                                                alt="cam kết">
-                                            <span>Hoàn tiền 111% nếu hàng giả</span>
+                                            <img src="{{ asset('frontend/img/camket_2.png') }}" alt="cam kết">
+                                            <span>Xuất được hoá đơn</span>
                                         </li>
                                         <li>
-                                            <img src="{{asset('frontend/img/camket_3.png')}}"
-                                                alt="cam kết">
+                                            <img src="{{ asset('frontend/img/camket_3.png') }}" alt="cam kết">
                                             <span>Giao tận tay khách hàng</span>
                                         </li>
                                         <li>
-                                            <img src="{{asset('frontend/img/camket_4.png')}}"
-                                                alt="cam kết">
+                                            <img src="{{ asset('frontend/img/camket_4.png') }}" alt="cam kết">
                                             <span>Mở hộp kiểm tra nhận hàng</span>
                                         </li>
                                         <li>
-                                            <img src="{{asset('frontend/img/camket_5.png')}}"
-                                                alt="cam kết">
+                                            <img src="{{ asset('frontend/img/camket_5.png') }}" alt="cam kết">
                                             <span>Hỗ trợ 24/7</span>
                                         </li>
                                     </ul>
@@ -428,8 +443,6 @@
                                             }
                                         }
                                     });
-
-                           
                                 </script>
                             </div>
                             <div class="col-12 col-md-12 col-lg-4 col-xl-3 ">
@@ -437,7 +450,7 @@
                                     <div class="col-12 col-md-12 col-lg-12">
                                         <div class="product-like">
                                             @include('layouts.menu.danhmuc')
-                                            @include('layouts.menu.tintuc')
+                                            {{-- @include('layouts.menu.tintuc') --}}
                                             <div class="title-header-col">
                                                 <span>CÓ THỂ <b>BẠN THÍCH</b></span>
                                             </div>
@@ -461,32 +474,38 @@
                                                                     href="{{ route('detailProduct', ['cate' => $item->cate_slug, 'type' => $item->type_slug ? $item->type_slug : 'loai', 'id' => $item->slug]) }}"
                                                                     title="{{ $item->name }}">{{ $item->name }}</a>
                                                             </h3>
-                                                           
-      <div class="price-box">
-         @if ($item->price > 0)
-         @if ($item->discount > 0)
-         <span class="special-price font-weight-bold">{{ number_format($item->discount) }}₫</span>
-         <del class="old-price"> {{ number_format($item->price) }}₫</del>
-         <div class="button-cunghang ">
-            <button class="but1 themgio" data-id="{{$item->id}}">Thêm vào giỏ hàng</button>
-          
-         </div>
-         @else
-         <span class="special-price font-weight-bold">{{ number_format($item->price) }}₫</span>
-         {{-- <del class="old-price"> {{ number_format($item->price) }}₫</del> --}}
-         <div class="button-cunghang ">
-            <button class="but1 themgio" data-id="{{$item->id}}">Thêm vào giỏ hàng</button>
-           
-         </div>
-         @endif
-         @else
-         <span class="special-price font-weight-bold dangcapnhat">Đang cập nhật</span>
-      
-           
-           
-     
-         @endif
-      </div>
+
+                                                            <div class="price-box">
+                                                                @if ($item->price > 0)
+                                                                    @if ($item->discount > 0)
+                                                                        <span
+                                                                            class="special-price font-weight-bold">{{ number_format($item->discount) }}₫</span>
+                                                                        <del class="old-price">
+                                                                            {{ number_format($item->price) }}₫</del>
+                                                                        {{-- <div class="button-cunghang ">
+                                                                            <button class="but1 themgio"
+                                                                                data-id="{{ $item->id }}">Thêm vào giỏ
+                                                                                hàng</button>
+
+                                                                        </div> --}}
+                                                                    @else
+                                                                        <span
+                                                                            class="special-price font-weight-bold">{{ number_format($item->price) }}₫</span>
+                                                                        {{-- <del class="old-price"> {{ number_format($item->price) }}₫</del> --}}
+                                                                        {{-- <div class="button-cunghang ">
+                                                                            <button class="but1 themgio"
+                                                                                data-id="{{ $item->id }}">Thêm vào giỏ
+                                                                                hàng</button>
+
+                                                                        </div> --}}
+                                                                        
+                                                                    @endif
+                                                                @else
+                                                                    <span
+                                                                        class="special-price font-weight-bold dangcapnhat">Đang
+                                                                        cập nhật</span>
+                                                                @endif
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 @endforeach
@@ -552,7 +571,6 @@
         });
 
         // Dừng khi hover
-    
     </script>
     <script>
         function incrementQuantity() {
@@ -567,47 +585,55 @@
             }
         }
     </script>
-        <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const addCartButton = document.querySelector('.btn_add_cart');
-    if (addCartButton) {
-        addCartButton.addEventListener('click', function (e) {
-            e.preventDefault();
-            const form = this.closest('form');
-            const formData = new FormData(form);
+    <script>
+        // Lắng nghe sự kiện DOMContentLoaded khi trang đã tải xong
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy nút "Thêm vào giỏ" bằng class .btn_add_cart
+            const addCartButton = document.querySelector('.btn_add_cart');
+            if (addCartButton) {
+            // Gắn sự kiện click cho nút "Thêm vào giỏ"
+            addCartButton.addEventListener('click', function(e) {
+                e.preventDefault(); // Ngăn chặn hành động mặc định của nút
 
-            fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    toastr.success(data.message); // Hiển thị thông báo thành công
+                // Lấy form chứa nút "Thêm vào giỏ"
+                const form = this.closest('form');
+                const formData = new FormData(form); // Tạo đối tượng FormData từ form
+
+                // Gửi yêu cầu fetch đến server
+                fetch(form.action, {
+                    method: 'POST', // Phương thức POST
+                    body: formData, // Dữ liệu từ form
+                    headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content // Token CSRF
+                    }
+                })
+                .then(response => response.json()) // Chuyển đổi phản hồi thành JSON
+                .then(data => {
+                    if (data.success) {
+                    // Hiển thị thông báo thành công bằng toastr
+                    toastr.success(data.message);
 
                     // Cập nhật số lượng sản phẩm trong giỏ hàng
                     const cartCountElements = document.querySelectorAll('.count_item_pr');
-                if (cartCountElements.length > 0) {
-                    cartCountElements.forEach(element => {
+                    if (cartCountElements.length > 0) {
+                        cartCountElements.forEach(element => {
                         element.textContent = data.cartCount; // Cập nhật số lượng từ server
-                    });
-                }
-                } else {
-                    toastr.error(data.message); // Hiển thị thông báo lỗi
-                }
-            })
-            .catch(error => {
-                console.error('Lỗi:', error);
-                toastr.error('Đã xảy ra lỗi. Vui lòng thử lại.');
+                        });
+                    }
+                    } else {
+                    // Hiển thị thông báo lỗi nếu có
+                    toastr.error(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error); // Ghi lỗi vào console
+                    toastr.error('Đã xảy ra lỗi. Vui lòng thử lại.'); // Hiển thị thông báo lỗi
+                });
             });
+            } else {
+            console.error('Phần tử .btn_add_cart không tồn tại.'); // Ghi lỗi nếu không tìm thấy nút
+            }
         });
-    } else {
-        console.error('Phần tử .btn_add_cart không tồn tại.');
-    }
-});
-         </script>
+    </script>
 
 @endsection

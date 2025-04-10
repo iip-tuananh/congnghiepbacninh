@@ -143,25 +143,25 @@ export default {
             }
           ],
         },
-        {
-          icon: "mdi mdi-newspaper menu-icon",
-          name: "Quản lý bài viết",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách bài viết",
-              path: "/blogs",
-            },
-            {
-              name: "Danh mục bài viết",
-              path: "/blog/category",
-            },
-            {
-              name: "Loại bài viết",
-              path: "/blog/type",
-            },
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-newspaper menu-icon",
+        //   name: "Quản lý bài viết",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách bài viết",
+        //       path: "/blogs",
+        //     },
+        //     {
+        //       name: "Danh mục bài viết",
+        //       path: "/blog/category",
+        //     },
+        //     {
+        //       name: "Loại bài viết",
+        //       path: "/blog/type",
+        //     },
+        //   ],
+        // },
         {
           icon: "mdi mdi-file-image menu-icon",
           name: "Website",
@@ -185,25 +185,25 @@ export default {
             // },
           ],
         },
-        {
-          icon: "mdi mdi-shopping-music menu-icon",
-          name: "Quản lý đơn hàng",
-          route_name: "",
-          sub: [
-            {
-              name: "Đơn hàng đã thanh toán",
-              path: "/bill/paymented",
-            },
-            {
-              name: "Đơn hàng cần kiểm tra",
-              path: "/bill/draft",
-            },
-            {
-              name: "Đơn hàng chưa hoàn tất",
-              path: "/bill/Unpayment",
-            },
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-shopping-music menu-icon",
+        //   name: "Quản lý đơn hàng",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Đơn hàng đã thanh toán",
+        //       path: "/bill/paymented",
+        //     },
+        //     {
+        //       name: "Đơn hàng cần kiểm tra",
+        //       path: "/bill/draft",
+        //     },
+        //     {
+        //       name: "Đơn hàng chưa hoàn tất",
+        //       path: "/bill/Unpayment",
+        //     },
+        //   ],
+        // },
         {
           icon: "mdi mdi-shopping-music menu-icon",
           name: "Quản lý khuyến mãi",
@@ -215,17 +215,17 @@ export default {
             }
           ],
         },
-        {
-          icon: "mdi mdi-shopping-music menu-icon",
-          name: "Quản lý tin nhắn liên hệ",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách",
-              path: "/messcontact",
-            }
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-shopping-music menu-icon",
+        //   name: "Quản lý tin nhắn liên hệ",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách",
+        //       path: "/messcontact",
+        //     }
+        //   ],
+        // },
         {
           icon: "mdi mdi-newspaper menu-icon",
           name: "Quản lý Review",
