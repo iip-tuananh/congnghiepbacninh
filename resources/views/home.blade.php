@@ -419,7 +419,7 @@
                 @else
                     <div class="container editnen">
                         <h3 class="title-index">
-                            <a class="title-name" href="#noibat" id="noibat"
+                            <a class="title-name" href="{{ route('allListProCate', ['danhmuc' => $item->slug]) }}" id="noibat"
                                 title="{{ languageName($item->name) }} "><span class="vienchu">
                                     {{ languageName($item->name) }}</span> <b>NỔI BẬT</b>
                             </a>
