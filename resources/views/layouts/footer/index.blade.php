@@ -88,7 +88,7 @@
 					</div>	
 
 				</div>
-				<div class="col-12 col-md-6 col-lg-2 link-list col-footer footer-click">
+				{{-- <div class="col-12 col-md-6 col-lg-2 link-list col-footer footer-click">
 					<h4 class="title-menu title-menu2">
 						Chính sách
 						<i class="open_mnu down_icon"></i>
@@ -106,7 +106,7 @@
                     @endforeach
 						
 					</ul>
-				</div>
+				</div> --}}
 				<div class="col-12 col-md-6 col-lg-2 link-list col-footer footer-click">
 					<h4 class="title-menu title-menu2">
 						Dịch Vụ
@@ -137,7 +137,7 @@
 						
 					</ul>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3"> 
+				<div class="col-12 col-md-6 col-lg-5"> 
 					<h4 class="title-menu">
 						Liên hệ
 					</h4>

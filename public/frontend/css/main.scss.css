@@ -4298,8 +4298,8 @@ img.lazyload.loaded {
     border-bottom: 2px solid #7c3402;
 }
 .logotop{
-    background-color: azure !important;
-    padding: 5px;
+    background-color: #00000000 !important;
+    /* padding: 5px; */
     border-radius: 15px;
     margin: 0 auto;
 }
@@ -4312,8 +4312,8 @@ img.lazyload.loaded {
 }
 @media screen and (min-width: 769px) {
     .logotop{
-        max-width: 121px !important;
-        height: 60px !important;
+        max-width: 138px !important;
+        height: 70px !important;
     }
 }
 .custom-search-container {

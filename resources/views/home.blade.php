@@ -234,7 +234,7 @@
         });
     </script> --}}
 
-<section class="section_flashsale">
+{{-- <section class="section_flashsale">
     <div class="container">
         <h3 class="title-index">
             <a class="title-name" href="{{ route('flashSale') }}" title="DEAL CỰC HẤP DẪN">
@@ -323,7 +323,7 @@
 
         // Dừng khi hover
     </script>
-</section>
+</section> --}}
 
 
 
@@ -397,7 +397,7 @@
                 @if ($key % 2 == 0)
                     <div class="container ">
                         <h3 class="title-index">
-                            <a class="title-name" href="#noibat" id="noibat"
+                            <a class="title-name" href="{{ route('allListProCate', ['danhmuc' => $item->slug]) }}" id="noibat"
                                 title="{{ languageName($item->name) }} "><span class="vienchu">
                                     {{ languageName($item->name) }}</span> <b>NỔI BẬT</b>
                             </a>

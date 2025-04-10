@@ -88,11 +88,11 @@ Danh sách {{ $title }}
                <div class="filter-container">
                   <!-- Lọc giá -->
                   <aside class="aside-item filter-price">
-                     <div class="title-head">
+                     {{-- <div class="title-head">
                         Chọn mức giá
-                     </div>
+                     </div> --}}
                      <div class="aside-content filter-group content_price">
-                        <ul>
+                        {{-- <ul>
                            <li class="filter-item filter-item--check-box filter-item--green">
                               <span>
                               <label data-filter="1-000-000d" for="filter-duoi-1-000-000d">
@@ -189,7 +189,7 @@ Danh sách {{ $title }}
                               </label>
                               </span>
                            </li>
-                        </ul>
+                        </ul> --}}
                      </div>
                   </aside>
                   <!-- End Lọc giá -->
