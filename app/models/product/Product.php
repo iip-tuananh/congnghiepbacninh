@@ -69,7 +69,7 @@ class Product extends Model
                     $query->type_two_slug = $typetwo ? $typetwo->slug : '';
                     $query->ingredient = $request->ingredient;
                     $query->type_cate = $request->type_cate;
-                    $query->qty = $request->qty;
+                    // $query->qty = $request->qty;
                     // $query->species = json_encode($request->species);
                     $query->origin = $request->origin;
                     $query->thickness = $request->thickness;
@@ -89,7 +89,7 @@ class Product extends Model
                             $data->product_id = $query->id;
                             $data->version = $val['version'];
                             $data->price = $val['price'];
-                            $data->qty = $val['qty'];
+                            // $data->qty = $val['qty'];
                             $data->sku = $query->slug.rand();
                             $data->save();
                         }
@@ -121,7 +121,7 @@ class Product extends Model
                 $query->thickness = $request->thickness;
                 $query->status_variant = $request->status_variant;
                 $query->hang_muc = $request->hang_muc;
-                $query->qty = $request->qty;
+                // $query->qty = $request->qty;
                 $query->status = $request->status;
                 $query->discountStatus = $request->discountStatus;
                 $query->home_status = $request->home_status;
@@ -133,7 +133,7 @@ class Product extends Model
                     $data->product_id = $query->id;
                     $data->version = $val['version'];
                     $data->price = $val['price'];
-                    $data->qty = $val['qty'];
+                    // $data->qty = $val['qty'];
                     $data->sku = $query->slug.rand();
                     $data->save();
                 }

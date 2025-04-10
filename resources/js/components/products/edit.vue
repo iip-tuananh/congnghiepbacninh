@@ -80,14 +80,14 @@
                                 v-model="data[indextr].price"
                               />
                             </vs-td>
-                            <vs-td >
+                            <!-- <vs-td >
                               <vs-input
                                 type="text"
                                 size="default"
                                 class="w-100"
                                 v-model="data[indextr].qty"
                               />
-                            </vs-td>
+                            </vs-td> -->
                           </vs-tr>
                         </template>
                       </vs-table>
@@ -130,14 +130,14 @@
                                 v-model="data[indextr].price"
                               />
                             </vs-td>
-                            <vs-td >
+                            <!-- <vs-td >
                               <vs-input
                                 type="text"
                                 size="default"
                                 class="w-100"
                                 v-model="data[indextr].qty"
                               />
-                            </vs-td>
+                            </vs-td> -->
                           </vs-tr>
                         </template>
                       </vs-table>

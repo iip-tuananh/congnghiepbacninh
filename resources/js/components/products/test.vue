@@ -77,7 +77,7 @@
                   <vs-select-item value="0" text="Hết hàng" />
                 </vs-select>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Số lượng</label>
                 <vs-input
                   type="text"
@@ -86,7 +86,7 @@
                   class="w-100"
                   v-model="objData.qty"
                 />
-              </div>
+              </div> -->
               <div class="form-group">
                 <label>Danh mục sản phẩm</label>
                 <vs-select
