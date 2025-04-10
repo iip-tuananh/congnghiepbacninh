@@ -130,7 +130,7 @@
                                                             title="{{ $category->name }}"
                                                             style="background-image: url('{{asset($category->avatar)}}')">
                                                             {{ languageName($category->name) }} </a>
-                                                        <div class="ul_content_right_1">
+                                                        {{-- <div class="ul_content_right_1">
                                                             <div class="row">
                                                                 <div class="nav_item nav-item lv2 col-lg-4 col-md-4"><a
                                                                         href="#"
@@ -138,7 +138,7 @@
                                                                         tạm thời hết !</a>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> --}}
                                                     @endif
                                                 </div>
                                             @endforeach
