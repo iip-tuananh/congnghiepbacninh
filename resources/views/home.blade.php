@@ -328,7 +328,7 @@
 
 
 {{-- phần khuyến mãi --}}
-<section class="section_3_banner">
+{{-- <section class="section_3_banner">
     <div class="container">
        <div class="banner-slider3 swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
           <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
@@ -389,7 +389,7 @@
             }
         }
     });
-</script>
+</script> --}}
     {{-- phần theo danh mục ====================================================================  --}}
     @foreach ($categoryhome as $key => $item)
         @if (count($item->product) > 0)

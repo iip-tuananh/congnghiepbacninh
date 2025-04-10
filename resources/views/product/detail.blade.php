@@ -216,7 +216,7 @@
                                                         <div class="btn-mua button_actions clearfix">
                                                             <a href="tel:{{ $setting->phone1 }}" class="cus-lien">Liên Hệ {{$setting->phone1}}
                                                                 <br>
-                                                                <p>Để đc tư vấn</p>
+                                                                <p>Để được tư vấn</p>
                                                             </a>
 
 
@@ -239,7 +239,7 @@
                                                         <div class="btn-mua button_actions clearfix">
                                                             <a href="tel:{{ $setting->phone1 }}" class="cus-lien">Liên Hệ {{$setting->phone1}}
                                                                 <br>
-                                                                <p>Để đc tư vấn</p>
+                                                                <p>Để dược tư vấn</p>
                                                             </a>
 
 

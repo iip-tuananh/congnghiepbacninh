@@ -204,17 +204,17 @@ export default {
         //     },
         //   ],
         // },
-        {
-          icon: "mdi mdi-shopping-music menu-icon",
-          name: "Quản lý khuyến mãi",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách",
-              path: "/promotion",
-            }
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-shopping-music menu-icon",
+        //   name: "Quản lý khuyến mãi",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách",
+        //       path: "/promotion",
+        //     }
+        //   ],
+        // },
         // {
         //   icon: "mdi mdi-shopping-music menu-icon",
         //   name: "Quản lý tin nhắn liên hệ",

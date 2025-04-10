@@ -130,7 +130,7 @@
 					<ul class="list-menu hidden-mobile">
 						@foreach ($categoryhome as $item)
                             
-						<li><a href="/may-khoan" title="{{languageName($item->name)}}">{{languageName($item->name)}}</a></li>
+						<li><a href="{{ route('allListProCate', ['danhmuc' => $item->slug]) }}" title="{{languageName($item->name)}}">{{languageName($item->name)}}</a></li>
                         @endforeach
 						
 						
